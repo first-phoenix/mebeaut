@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { AppContext } from '../context/store'
 import { FaStar } from "react-icons/fa"
 
@@ -6,7 +6,7 @@ export default function LookTile({ item }) {
   const { setLook } = useContext(AppContext)
   
   return (
-    <div className = "bg-white bg-opacity-50 flex flex-col text-center rounded-lg h-fit p-4" onClick = { () => setLook(item) }>
+    <div className = "bg-[#C4C8C0] flex flex-col text-center rounded-lg h-fit p-4" onClick = { () => setLook(item) }>
       <div className = "rounded-lg mb-4">
         <img className = "rounded-full h-24 w-24" src = { item.asset } />
       </div>
