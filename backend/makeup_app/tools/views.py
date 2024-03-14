@@ -10,6 +10,7 @@ import os
 from .helper import faceditector
 from .helper.lipstic import drawLips 
 from .helper.foundation import apply_foundation
+from .helper.eyeliner import applyEyeLiners
 
 def generate_unique_string():
     # Get the current date and time
@@ -91,6 +92,51 @@ def foundation(request):
         img=cv2.imread(img)
         img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
         img=apply_foundation(img,jsondata['r'],jsondata['g'],jsondata['b'],jsondata['saturation'])
+        return ret_http_image(img)
+    else:
+        return JsonResponse({'error': 'Only POST requests are allowed'}, status=405)
+
+@csrf_exempt    
+def eyeline(request):
+    if request.method=='POST':
+        raw_data=request.body
+        jsondata=json.loads(raw_data)
+        # print(jsondata)
+        if 'r' not in jsondata or 'g' not in jsondata or 'b' not in jsondata or 'thickness' not in jsondata:
+            return JsonResponse({'error':'missing rgb or thickness values for eyeline'},status=422)
+        img=request.session['image']
+        img=cv2.imread(img)
+        # img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+        points=request.session['points']
+        img=applyEyeLiners(img,points,rgbColor=(jsondata['r'],jsondata['g'],jsondata['b']),thickness=jsondata['thickness'])
+        return ret_http_image(img)
+    else:
+        return JsonResponse({'error': 'Only POST requests are allowed'}, status=405)
+    
+@csrf_exempt    
+def makeup(request):
+    if request.method=='POST':
+        raw_data=request.body
+        jsondata=json.loads(raw_data)
+        # print(jsondata)
+        img=request.session['image']
+        points=request.session['points']
+        img=cv2.imread(img)
+        img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+        if 'lips' in jsondata:
+            if 'r' not in jsondata['lips'] or 'g' not in jsondata['lips'] or 'b' not in jsondata['lips'] or 'saturation' not in jsondata['lips']:
+                return JsonResponse({'error':'missing rgb or saturation values for lips'},status=422)
+            img=drawLips(img,points,jsondata['lips']['r'],jsondata['lips']['g'],jsondata['lips']['b'],jsondata['lips']['saturation'])
+        img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+        if 'foundation' in jsondata:
+            if 'r' not in jsondata['foundation'] or 'g' not in jsondata['foundation'] or 'b' not in jsondata['foundation'] or 'saturation' not in jsondata['foundation']:
+                return JsonResponse({'error':'missing rgb or saturation values for foundation'},status=422)
+            img=apply_foundation(img,jsondata['foundation']['r'],jsondata['foundation']['g'],jsondata['foundation']['b'],jsondata['foundation']['saturation'])
+        # img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+        if 'eyeline' in jsondata:
+            if 'r' not in jsondata['eyeline'] or 'g' not in jsondata['eyeline'] or 'b' not in jsondata['eyeline'] or 'thickness' not in jsondata['eyeline']:
+                return JsonResponse({'error':'missing rgb or saturation values for lips'},status=422)
+            img=applyEyeLiners(img,points,rgbColor=(jsondata['eyeline']['r'],jsondata['eyeline']['g'],jsondata['eyeline']['b']),thickness=jsondata['eyeline']['thickness'])
         return ret_http_image(img)
     else:
         return JsonResponse({'error': 'Only POST requests are allowed'}, status=405)

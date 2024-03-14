@@ -23,5 +23,7 @@ urlpatterns = [
     path('',views.home,name='home'),
     path('save',views.receive_image,name='process'),
     path('drawlips',views.draw_lipstic,name='lipstic'),
-    path('foundation',views.foundation,name='foundation')
+    path('foundation',views.foundation,name='foundation'),
+    path('eyeline',views.eyeline,name='eyeliners'),
+    path('makeup',views.makeup,name='full_makeup')
 ]
