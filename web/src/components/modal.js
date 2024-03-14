@@ -14,7 +14,7 @@ const customStyles = {
   }
 }
 
-export default function MyModal({ icon, action }) {
+export default function CustomModal({ icon, action }) {
     const [open, setOpen] = useState(false)
 
     return (

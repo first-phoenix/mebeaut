@@ -257,7 +257,7 @@
 },
 {
   "name": "Mob-Wife",
-  "asset": "./assets/desi.png",
+  "asset": "./assets/mob_wife.png",
   "products": {
 
     "foundation": {
@@ -363,7 +363,97 @@
 {
   "name": "Christmas",
   "asset": "./assets/christmas.png",
-  "products": {},
+  "products": {
+    "foundation":
+    {
+     "name": "Pro-Matte Foundation",
+      "shadeName": "Classic Tan",
+      "shadeHex": "#c27f48",
+      "shadeCode": "109",
+      "image": "https://es.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/foundation-makeup/infallible-pro-matte-foundation/classic-tan-109/071249293089_t1.png?w=360&rev=18153610e6464dfbaa425e4746bf45b4&hash=B083C46A846C8DF7B8D5C79F49A096B23E7CAA64",
+      "price": "3665"
+    },
+    "concealer": {
+     "name": "L'Oréal True Match Concealer",
+      "shadeName": "Medium/Deep Neutral",
+      "shadeHex": "#d29365",
+      "shadeCode": "N6-7-8",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/medium-deep-neutral-n6-7-8/071249017340_t1.png?w=360&rev=b1a3256a76a64f43833e61961f7cc986&hash=24445F57F41D7A126C621BF3A80CB73135CCBE70",
+      "price": "828"
+    },
+    "blush": {
+      "name": "L'Oréal True Match Blush",
+      "shadeName": "Subtle Sable",
+      "shadeHex": "#cc8970",
+      "shadeCode": "W5-6",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017463_t1.png?w=360&rev=5518ab5d0a6847ba84fe7ab9a9611126&hash=2ACBE9AD2637619A7D54D77EBEC96E48CB55DB7F",
+      "price": "775"
+    },
+    "eyebrow": {
+        "name": "L'Oréal Brow Artist Xpert",
+    "shadeName": "Ebony",
+    "shadeHex": "#f2f2f2",
+    "shadeCode": "109",
+    "image": "https://www.lorealparis.co.in/brow-artist/xpert-eyebrow-pencil-109-ebony",
+    "price": "849"
+    },
+    "lipstick": {
+      "name": "L'Oréal Rouge Signature Matte Liquid Lipstick",
+      "shadeName": "I Enjoy",
+      "shadeHex": "#9D3047",
+      "shadeCode": "103",
+      "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-103-i-enjoy",
+      "price": "809"
+    }
+  },
+  "addons": {},
+  "tools": {}
+},
+{
+  "name": "Dewy Delight",
+  "asset": "./assets/dewy_delight.png",
+  "products": {
+    "foundation": {
+      "name": "L'Oréal True Match Liquid Foundation",
+      "shadeName": "Rose Vanilla",
+      "shadeHex": "#e5c6b3",
+      "shadeCode": "2R2C2K",
+      "image": "https://www.bing.com/images/blob?bcid=r2dATXjyN8gGYA",
+      "price": "3665"
+    },
+    "concealer": {
+      "name": "L'Oréal True Match Concealer",
+      "shadeName": "Medium/Deep Cool",
+      "shadeHex": "#a77043",
+      "shadeCode": "C6-7-8",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/medium-deep-cool-c6-7-8/071249017357_t1.png?w=360&rev=b157fa5b245545bd902cceef5b0d3af8&hash=328EACF729BB053DA9D6C8C5DF69ED18F52F4929",
+      "price": "828"
+    },
+    "blush": {
+      "name": "L'Oréal True Match Blush",
+      "shadeName": "Sweet Ginger",
+      "shadeHex": "#b97e59",
+      "shadeCode": "N7-8",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/blush/true-match-blush/sweet-ginger-n7-8/10-11-23-en/071249041840-t1.png?w=360&rev=ab159764cf96492e8be1b6dca0b53681&hash=CE1CA2EB865396260EB7629D402B77A8223D352C",
+      "price": "775"
+    },
+    "eyebrow": {
+      "name": "L'Oréal Brow Artist Xpert",
+      "shadeName": "Cool Brunette",
+      "shadeHex": "#8b4513",
+      "shadeCode": "107",
+      "image": "https://www.lorealparis.co.in/brow-artist/xpert-107-cool-brunette",
+      "price": "849"
+    },
+    "lipstick": {
+      "name": "L'Oréal Rouge Signature Matte Liquid Lipstick ",
+      "shadeName": "Rule",
+      "shadeHex": "#a75053",
+      "shadeCode": "105",
+      "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/lip-makeup/6902395718239_packshot.png?w=360&rev=c4526c7c89494429be48bfb56e5548eb&hash=99A1FB37ABD1EF2BF31944CF54C216C66D19C75B",
+      "price": "899"
+    }
+  },
   "addons": {},
   "tools": {}
 }
