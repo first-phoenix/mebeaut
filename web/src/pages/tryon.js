@@ -8,38 +8,37 @@ import LookTile from '../components/lookTile'
 import data from '../data/looks.json'
 
 function TryOn() {
-    const { userPhoto, parameter } = useContext(AppContext)
-    const navigate = useNavigate()
+  const { userPhoto, parameter } = useContext(AppContext)
+  const navigate = useNavigate()
 
-    useEffect(() => {
-      if(!userPhoto) {
-        navigate('/')
-      }
-    }, [])
+  useEffect(() => {
+    if(!userPhoto) {
+      navigate('/')
+    }
+  }, [])
   
-    return (
-      <div className = "bg-gradient-to-r from-slate-900 to-slate-700 p-12">
-        <Navbar />
-        <div className = "flex gap-12">
-          <div className = "w-1/3">
-            <div className = "relative">
-              <img className = "rounded-md" src = { userPhoto } /> 
-              <ShadePalette />
-            </div>
-            { parameter !== '' && <ShadePicker /> } 
+  return (
+    <div className = "bg-gradient-to-r from-slate-900 to-slate-700 h-screen p-12">
+      <Navbar />
+      <div className = "flex flex-row gap-12">
+        <div className = "absolute left-12 top-[20%] bottom-0 right-[67%] overflow-hidden">
+           <div className = "relative">
+            <img className = "rounded-md" src = { userPhoto } /> 
+            <ShadePalette />
           </div>
-          <div className = "grow grid grid-cols-3 gap-8 p-6">
-            {
-              data.map((item, index) => {
-                let props = { item }
-  
-                return <LookTile key = { index } { ...props } />
-              })
-            }
-          </div>
+          { parameter !== '' && <ShadePicker /> } 
+        </div>
+        <div className = "grid grid-cols-2 absolute left-[38%] top-[20%] bottom-0 right-12 overflow-y-auto gap-8">
+          {
+            data.map((item, index) => {
+              let props = { item }
+              return <LookTile key = { index } { ...props } />
+            })
+          }
         </div>
       </div>
-    )
-  }
+    </div>
+  )
+}
   
-  export default TryOn
+export default TryOn
