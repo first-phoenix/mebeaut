@@ -11,6 +11,8 @@ from .helper import faceditector
 from .helper.lipstic import drawLips 
 from .helper.foundation import apply_foundation
 from .helper.eyeliner import applyEyeLiners
+import base64
+import io
 
 def generate_unique_string():
     # Get the current date and time
@@ -22,12 +24,28 @@ def generate_unique_string():
 
 # used to send the image
 def ret_http_image(img):
-    if img is None:
-        return HttpResponse("no image generated",status=404)
+    # Convert the NumPy array to a PIL Image
+    image = Image.fromarray(img)
 
-    _,img_encoded=cv2.imencode('.jpg',img)
-    img=img_encoded.tobytes()
-    return HttpResponse(img,content_type='image/jpeg')
+    # Create a BytesIO object to hold the image data
+    image_buffer = io.BytesIO()
+
+    # Save the PIL Image to the BytesIO object in PNG format
+    image.save(image_buffer, format='PNG')
+
+    # Get the base64 encoded string
+    base64_image_string = base64.b64encode(image_buffer.getvalue()).decode()
+    raw_data=json.dumps({'image':'data:image/png;base64,'+base64_image_string})
+    # raw_data=json.dumps({'image':'hello'})
+    print(raw_data)
+
+    return HttpResponse(raw_data,content_type='application/json')
+    # if img is None:
+    #     return HttpResponse("no image generated",status=404)
+    # _,img_encoded=cv2.imencode('.jpg',img)
+    # img=img_encoded.tobytes()
+    # print(img)
+    # return HttpResponse(img,content_type='image/jpeg')
 
 
 # Create your views here.
@@ -39,14 +57,15 @@ def home(requst):
 def receive_image(request):
     if request.method == 'POST':
         try:
-            # Access the image file from the request
-            image_file = request.FILES['image']
-            # Access other form fields if needed
-            field1 = request.POST.get('name')
-            # open image file using pil image library
-            image=Image.open(image_file)
-            #converting the image to http formate
-            image=np.array(image)
+            raw_data=json.loads(request.body)
+            raw_data=raw_data['image']
+            raw_data=raw_data[23:]
+            # Decode the base64 string to binary data
+            binary_data = base64.b64decode(raw_data)
+            # Convert binary data to a PIL Image
+            image = Image.open(io.BytesIO(binary_data))
+            # Convert the PIL Image to a NumPy array
+            image = np.array(image)
             # save the image
             points=faceditector.detect_landmarks(image)
             request.session['points']=points
@@ -56,7 +75,7 @@ def receive_image(request):
             cv2.imwrite(path,cv2.cvtColor(image,cv2.COLOR_RGB2BGR))
             print(path)
             request.session['image']=path
-            return JsonResponse({'message': 'Image processed successfully', 'name': field1})
+            return JsonResponse({'message': 'Image processed successfully'})
         except Exception as e:
             return JsonResponse({'error': 'Error processing image', 'details': str(e)}, status=400)
     else:
@@ -121,22 +140,24 @@ def makeup(request):
         # print(jsondata)
         img=request.session['image']
         points=request.session['points']
-        img=cv2.imread(img)
-        img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-        if 'lips' in jsondata:
-            if 'r' not in jsondata['lips'] or 'g' not in jsondata['lips'] or 'b' not in jsondata['lips'] or 'saturation' not in jsondata['lips']:
+        img=cv2.imread(img) #BGR image
+        if 'lipstick' in jsondata:
+            if 'r' not in jsondata['lipstick'] or 'g' not in jsondata['lipstick'] or 'b' not in jsondata['lipstick']:
                 return JsonResponse({'error':'missing rgb or saturation values for lips'},status=422)
-            img=drawLips(img,points,jsondata['lips']['r'],jsondata['lips']['g'],jsondata['lips']['b'],jsondata['lips']['saturation'])
-        img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+            img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB) #RGB image
+            img=drawLips(img,points,jsondata['lipstick']['r'],jsondata['lipstick']['g'],jsondata['lipstick']['b']) #BGR image
         if 'foundation' in jsondata:
-            if 'r' not in jsondata['foundation'] or 'g' not in jsondata['foundation'] or 'b' not in jsondata['foundation'] or 'saturation' not in jsondata['foundation']:
+            if 'r' not in jsondata['foundation'] or 'g' not in jsondata['foundation'] or 'b' not in jsondata['foundation']:
                 return JsonResponse({'error':'missing rgb or saturation values for foundation'},status=422)
-            img=apply_foundation(img,jsondata['foundation']['r'],jsondata['foundation']['g'],jsondata['foundation']['b'],jsondata['foundation']['saturation'])
-        # img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-        if 'eyeline' in jsondata:
-            if 'r' not in jsondata['eyeline'] or 'g' not in jsondata['eyeline'] or 'b' not in jsondata['eyeline'] or 'thickness' not in jsondata['eyeline']:
+            img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+            img=apply_foundation(img,jsondata['foundation']['r'],jsondata['foundation']['g'],jsondata['foundation']['b'])
+        img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+        if 'eyeliner' in jsondata:
+            if 'r' not in jsondata['eyeliner'] or 'g' not in jsondata['eyeliner'] or 'b' not in jsondata['eyeliner']:
                 return JsonResponse({'error':'missing rgb or saturation values for lips'},status=422)
-            img=applyEyeLiners(img,points,rgbColor=(jsondata['eyeline']['r'],jsondata['eyeline']['g'],jsondata['eyeline']['b']),thickness=jsondata['eyeline']['thickness'])
+            img=applyEyeLiners(img,points,rgbColor=(jsondata['eyeliner']['r'],jsondata['eyeliner']['g'],jsondata['eyeliner']['b']))
+        cv2.imwrite(r'C:\Users\arpan.a.mandal\Desktop\project\main_app\makeup_app\tools\images\test.jpg',img)
+        cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
         return ret_http_image(img)
     else:
         return JsonResponse({'error': 'Only POST requests are allowed'}, status=405)

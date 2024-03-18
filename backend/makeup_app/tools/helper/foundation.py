@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-def apply_foundation(img,r,g,b,saturation):
+def apply_foundation(img,r,g,b,saturation=0.2):
     # Load the image
     image = cv2.cvtColor(img,cv2.COLOR_RGB2BGR)
     img=image.copy()

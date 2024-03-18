@@ -17,7 +17,8 @@ def createBox(img,upper,lower):
     mask = cv2.fillPoly(mask,[poly1,poly2],(255,255,255))
     return mask
 
-def drawLips(img,points,r,g,b,saturation):
+#output is BGR image
+def drawLips(img,points,r,g,b,saturation=0.4):
     imgOriginal=cv2.cvtColor(img,cv2.COLOR_RGB2BGR)
     imgLips=createBox(img,upperLip(points),lowerLip(points))
     imgColorLips=np.zeros_like(imgLips)
