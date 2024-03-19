@@ -10,7 +10,9 @@ export default function Navbar() {
                     <input type = "text" className = "rounded-lg w-[22rem] py-2 px-4" />
                     <CiSearch className = "absolute right-4" />
                 </div>
-                <IoCartOutline />
+                <a href = "/cart">
+                    <IoCartOutline />
+                </a>
             </div>
         </nav>
     )

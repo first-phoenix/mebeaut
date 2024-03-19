@@ -25,7 +25,7 @@ const ProviderWrapper = ({ children }) => {
             'concealer': hexToRgb(look.products.concealer.shadeHex),
             'blush': hexToRgb(look.products.blush.shadeHex),
             'eyeliner': hexToRgb(look.products.eyeliner.shadeHex),
-            'lipstick': hexToRgb(look.products.lipstick.shadeHex),
+            'lipstick': hexToRgb(look.products.lipstick.shadeHex)
         }
 
         fetch('/makeup', {
@@ -36,7 +36,6 @@ const ProviderWrapper = ({ children }) => {
             body: JSON.stringify(data)
         }).then((resp) => resp.json()
         ).then((data) => {
-            console.log(data)
             setUserPhoto(data.image)
         })
     }, [userPhoto, look])

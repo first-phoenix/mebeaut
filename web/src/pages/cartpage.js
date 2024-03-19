@@ -4,7 +4,7 @@ import { AppContext } from '../context/store'
 import { FaTrashAlt } from 'react-icons/fa'
 import Navbar from '../components/navbar'
 
-function Cart() {
+function CartPage() {
   const { userPhoto } = useContext(AppContext)
   const navigate = useNavigate()
 
@@ -65,4 +65,4 @@ function Cart() {
   )
 }
 
-export default Cart
+export default CartPage
