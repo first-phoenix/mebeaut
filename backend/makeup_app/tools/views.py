@@ -37,7 +37,7 @@ def ret_http_image(img):
     base64_image_string = base64.b64encode(image_buffer.getvalue()).decode()
     raw_data=json.dumps({'image':'data:image/png;base64,'+base64_image_string})
     # raw_data=json.dumps({'image':'hello'})
-    print(raw_data)
+    # print(raw_data)
 
     return HttpResponse(raw_data,content_type='application/json')
     # if img is None:
@@ -58,8 +58,9 @@ def receive_image(request):
     if request.method == 'POST':
         try:
             raw_data=json.loads(request.body)
+            print(raw_data)
             raw_data=raw_data['image']
-            raw_data=raw_data[23:]
+            raw_data=raw_data[22:]
             # Decode the base64 string to binary data
             binary_data = base64.b64decode(raw_data)
             # Convert binary data to a PIL Image
@@ -73,7 +74,6 @@ def receive_image(request):
             folder_path=path+'/tools/images/'
             path=folder_path+generate_unique_string()+".jpg"
             cv2.imwrite(path,cv2.cvtColor(image,cv2.COLOR_RGB2BGR))
-            print(path)
             request.session['image']=path
             return JsonResponse({'message': 'Image processed successfully'})
         except Exception as e:
@@ -110,7 +110,7 @@ def foundation(request):
         img=request.session['image']
         img=cv2.imread(img)
         img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-        img=apply_foundation(img,jsondata['r'],jsondata['g'],jsondata['b'],jsondata['saturation'])
+        img=apply_foundation(img,jsondata['r'],jsondata['g'],jsondata['b'])
         return ret_http_image(img)
     else:
         return JsonResponse({'error': 'Only POST requests are allowed'}, status=405)
@@ -146,6 +146,7 @@ def makeup(request):
                 return JsonResponse({'error':'missing rgb or saturation values for lips'},status=422)
             img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB) #RGB image
             img=drawLips(img,points,jsondata['lipstick']['r'],jsondata['lipstick']['g'],jsondata['lipstick']['b']) #BGR image
+            # img=drawLips(img,points,255,0,0)
         if 'foundation' in jsondata:
             if 'r' not in jsondata['foundation'] or 'g' not in jsondata['foundation'] or 'b' not in jsondata['foundation']:
                 return JsonResponse({'error':'missing rgb or saturation values for foundation'},status=422)
@@ -156,7 +157,6 @@ def makeup(request):
             if 'r' not in jsondata['eyeliner'] or 'g' not in jsondata['eyeliner'] or 'b' not in jsondata['eyeliner']:
                 return JsonResponse({'error':'missing rgb or saturation values for lips'},status=422)
             img=applyEyeLiners(img,points,rgbColor=(jsondata['eyeliner']['r'],jsondata['eyeliner']['g'],jsondata['eyeliner']['b']))
-        cv2.imwrite(r'C:\Users\arpan.a.mandal\Desktop\project\main_app\makeup_app\tools\images\test.jpg',img)
         cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
         return ret_http_image(img)
     else:
