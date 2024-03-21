@@ -1,0 +1,460 @@
+[{
+  "name": "Bridal",
+  "asset": "./assets/bridal.png",
+  "products": {
+    "foundation": {
+      "name": "Pro-Matte Foundation",
+      "shadeName": "Golden Beige",
+      "shadeHex": "#e7a96b",
+      "shadeCode": "104",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/foundation-makeup/infallible-pro-matte-foundation/golden-beige-104/071249293034_t1-v2.png?w=360&rev=05e9caa73e314fc8960568227b0c5741&hash=F11416A3DDC9EC24D852C7E7E66C7C2D8AB77F52",
+      "price": "3665"
+    },
+    "concealer": {
+      "name": "L'Oréal True Match Concealer",
+      "shadeName": "Fair/Light Cool",
+      "shadeHex": "#e8c5b0",
+      "shadeCode": "C1-2-3",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/fair-light-cool-c1-2-3/071249017289_t1.png?w=360&rev=dd76ce51c6ba42c79d993f79b9790fb3&hash=87DFAD87BA9B6F604AAEB353C201AACF49B272BC",
+      "price": "828"
+    },
+    "blush": {
+      "name": "L'Oréal True Match Blush ",
+      "shadeName": "Rosy Outname",
+      "shadeHex": "#ad7466",
+      "shadeCode": "C5-6",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017524_t1.png?w=360&rev=6192be7d42734c21be0e8eaae8991c73&hash=2A29440A53455D3A3151D5E6DC50123FF76453A0",
+      "price": "775"
+    },
+    "eyeliner": {
+      "name": "L'Oreal Paris Matte Signature Eyeliner",
+      "shadeName": "Brown",
+      "shadeHex": "#8A4C4A",
+      "shadeCode": "02",
+      "image": "https://www.lorealparis.co.in/matte-signature/liner-brown",
+      "price": "849"
+    },
+    "lipstick": {
+      "name": "L'Oréal Rouge Signature Matte Liquid Lipstick",
+      "shadeName": "I'm worth it",
+      "shadeHex": "#8C0C0D",
+      "shadeCode": "115",
+      "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-115-i-am-worth-it",
+      "price": "809"
+    }
+  },
+  "addons": {
+    "bronzer": {
+      "name": "Infalliable Soft Matte Bronzer",
+      "shadeName": "Light Medium",
+      "shadeHex": "#c37a55",
+      "shadeCode": "300",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/bronzer/infallible-up-to-24h-fresh-wear-soft-matte-bronzer/light-medium/071249664179_t1.png?w=360&rev=7c37e34bde70403589d3f0e03fe6daac&hash=FE06F15B0B2F36CE464AB147F77A9D7C7B4CC826",
+      "price": "1325"
+    }
+  },
+  "tools":{}
+},
+{
+  "name": "No Makeup",
+  "asset": "./assets/no_makeup.png",
+  "products": {
+    "foundation": {
+      "name": "Pro-Matte Foundation",
+      "shadeName": "Sun Beige",
+      "shadeHex": "#daa271",
+      "shadeCode": "106",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/foundation-makeup/infallible-pro-matte-foundation/sun-beige-106/071249293058_t1-v2.png?w=360&rev=df5d432c7965446087634b0c3b987ace&hash=3F273ADC2B1C08C710179C927F45BE6582B9C083",
+      "price": "3665"
+    },
+    "concealer": {
+      "name": "L'Oréal True Match Concealer",
+      "shadeName": "Medium/Deep Cool",
+      "shadeHex": "#a77043",
+      "shadeCode": "C6-7-8",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/medium-deep-cool-c6-7-8/071249017357_t1.png?w=360&rev=b157fa5b245545bd902cceef5b0d3af8&hash=328EACF729BB053DA9D6C8C5DF69ED18F52F4929",
+      "price": "828"
+    },
+    "blush": {
+      "name": "L'Oréal True Match Blush",
+      "shadeName": "Subtle Sable",
+      "shadeHex": "#cc8970",
+      "shadeCode": "W5-6",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017463_t1.png?w=360&rev=5518ab5d0a6847ba84fe7ab9a9611126&hash=2ACBE9AD2637619A7D54D77EBEC96E48CB55DB7F",
+      "price": "775"
+    },
+    "eyebrow": {
+      "name": "L'Oréal Brow Artist Xpert",
+      "shadeName": "Cool Brunette",
+      "shadeHex": "#8B4513",
+      "shadeCode": "107",
+      "image": "https://www.lorealparis.co.in/brow-artist/xpert-107-cool-brunette",
+      "price": "849"
+    },
+    "lipstick": {
+      "name": "L'Oréal Rouge Signature Matte Liquid Lipstick ",
+      "shadeName": "I Explore",
+      "shadeHex": "#7D463F",
+      "shadeCode": "116",
+      "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-116-i-explore",
+      "price": "809"
+    }
+  },
+  "addons": {},
+  "tools": {}
+},
+{
+  "name": "Barbie",
+  "asset": "./assets/barbie.png",
+  "products": {
+
+    "foundation": {
+      "name": "Pro-Matte Foundation",
+      "shadeName": "Classic Tan",
+      "shadeHex": "#c27f48",
+      "shadeCode": "109",
+      "image": "https://es.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/foundation-makeup/infallible-pro-matte-foundation/classic-tan-109/071249293089_t1.png?w=360&rev=18153610e6464dfbaa425e4746bf45b4&hash=B083C46A846C8DF7B8D5C79F49A096B23E7CAA64",
+      "price": "3665"
+    },
+    "concealer": {
+      "name": "L'Oréal True Match Concealer",
+      "shadeName": "Medium/Deep Neutral",
+      "shadeHex": "#d29365",
+      "shadeCode": "N6-7-8",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/medium-deep-neutral-n6-7-8/071249017340_t1.png?w=360&rev=b1a3256a76a64f43833e61961f7cc986&hash=24445F57F41D7A126C621BF3A80CB73135CCBE70",
+      "price": "828"
+    },
+    "blush": {
+      "name": "L'Oréal True Match Blush",
+      "shadeName": "Baby Blossom",
+      "shadeHex": "#d8a9a5",
+      "shadeCode": "C1",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017500_t1.png?w=360&rev=6eaf4eaba3cf49e88f4ba01622b33a55&hash=7DF8588A80514B51226CC2C3F3286A01689F5BF3",
+      "price": "775"
+    },
+    "eyeliner": {
+      "name": "L'Oreal Paris Matte Signature Eyeliner",
+      "shadeName": "Black",
+      "shadeHex": "#000000",
+      "shadeCode": "01",
+      "image": "https://www.lorealparis.co.in/matte-signature/liner-black",
+      "price": "849"
+      
+    },
+    "lipstick": {
+      "name": "L'Oréal Rouge Signature Matte Liquid Lipstick",
+      "shadeName": "I Enjoy",
+      "shadeHex": "#9D3047",
+      "shadeCode": "103",
+      "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-103-i-enjoy",
+      "price": "809"
+    }
+  },
+  "addons": {},
+  "tools": {}
+},
+{
+  "name": "Corporate",
+  "asset": "./assets/corporate.png",
+  "products": {
+
+    "foundation": {
+      "name": "Pro-Matte Foundation",
+      "shadeName": "Fresh Beige",
+      "shadeHex": "#d49e6c",
+      "shadeCode": "107",
+      "image": "https://es.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/foundation-makeup/infallible-pro-matte-foundation/fresh-beige-107/071249293065_t1.png?w=360&rev=f8861b91bc9f4e819607b56a1c6d759e&hash=C541D1C8FEE7E4FD76C71CAC341ABD55E6A4D36F",
+      "price": "3665"
+    },
+    "concealer": {
+      "name": "L'Oréal True Match Concealer",
+      "shadeName": "Fair/Light Neutral",
+      "shadeHex": "#efcbb2",
+      "shadeCode": "N1-2-3",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/fair-light-neutral-n1-2-3/071249017265_t1.png?w=360&rev=3b98a3a4ff934f8a8f66368e17a547ad&hash=EE555799D49970C253D382DF6D2F7DBC3742EA02",
+      "price": "828"
+    },
+    "blush": {
+      "name": "L'Oréal True Match Blush",
+      "shadeName": "Baby Blossom",
+      "shadeHex": "#d8a9a5",
+      "shadeCode": "C1",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017500_t1.png?w=360&rev=6eaf4eaba3cf49e88f4ba01622b33a55&hash=7DF8588A80514B51226CC2C3F3286A01689F5BF3",
+      "price": "775"
+    },
+    "eyeliner": {
+      "name": "L'Oreal Paris Matte Signature Eyeliner",
+      "shadeName": "Black",
+      "shadeHex": "#000000",
+      "shadeCode": "01",
+      "image": "https://m.media-amazon.com/images/I/81JcxiHvxML._SX679_.jpg",
+      "price": "849"
+      
+    },
+    "lipstick": {
+      "name": "L'Oréal Rouge Signature Matte Liquid Lipstick",
+      "shadeName": "I Explore",
+      "shadeHex": "#7D463F",
+      "shadeCode": "116",
+      "image": "https://m.media-amazon.com/images/I/41SrO7pmR5L._SX679_.jpg",
+      "price": "809"
+    }
+
+  },
+  "addons": {},
+  "tools": {}
+},
+{
+  "name": "Date",
+  "asset": "./assets/date.png",
+  "products": {
+
+    "foundation": {
+    "name": "Pro-Matte Foundation",
+      "shadeName": "Golden Beige",
+      "shadeHex": "#e7a96b",
+      "shadeCode": "104",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/foundation-makeup/infallible-pro-matte-foundation/golden-beige-104/071249293034_t1-v2.png?w=360&rev=05e9caa73e314fc8960568227b0c5741&hash=F11416A3DDC9EC24D852C7E7E66C7C2D8AB77F52",
+      "price": "3665"
+  },
+  "concealer": {
+     "name": "L'Oréal True Match Concealer",
+      "shadeName": "Medium/Deep Neutral",
+      "shadeHex": "#d29365",
+      "shadeCode": "N6-7-8",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/medium-deep-neutral-n6-7-8/071249017340_t1.png?w=360&rev=b1a3256a76a64f43833e61961f7cc986&hash=24445F57F41D7A126C621BF3A80CB73135CCBE70",
+      "price": "828"
+  },
+  "blush": {
+    "name": "L'Oréal True Match Blush ",
+      "shadeName": "Rosy Outlook",
+      "shadeHex": "#ad7466",
+      "shadeCode": "C5-6",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017524_t1.png?w=360&rev=6192be7d42734c21be0e8eaae8991c73&hash=2A29440A53455D3A3151D5E6DC50123FF76453A0",
+      "price": "775"
+  },
+  "eyeliner": {
+    "name": "L'Oreal Paris Matte Signature Eyeliner",
+    "shadeName": "Brown",
+    "shadeHex": "#8A4C4A",
+    "shadeCode": "02",
+    "image": "https://www.lorealparis.co.in/matte-signature/liner-brown",
+    "price": "849"
+    
+  },
+  "lipstick": {
+    "name": "L'Oréal Rouge Signature Matte Liquid Lipstick",
+    "shadeName": "I Lead",
+    "shadeHex": "#A41F0D",
+    "shadeCode": "129",
+    "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-129-lead",
+    "price": "809"
+  }
+
+  },
+  "addons": {},
+  "tools": {}
+},
+{
+  "name": "Mob-Wife",
+  "asset": "./assets/mob_wife.png",
+  "products": {
+
+    "foundation": {
+      "name": "Pro-Matte Foundation",
+        "shadeName": "Golden Beige",
+        "shadeHex": "#e7a96b",
+        "shadeCode": "104",
+        "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/foundation-makeup/infallible-pro-matte-foundation/golden-beige-104/071249293034_t1-v2.png?w=360&rev=05e9caa73e314fc8960568227b0c5741&hash=F11416A3DDC9EC24D852C7E7E66C7C2D8AB77F52",
+        "price": "3665"
+    },
+    "concealer": {
+       "name": "L'Oréal True Match Concealer",
+        "shadeName": "Medium/Deep Neutral",
+        "shadeHex": "#d29365",
+        "shadeCode": "N6-7-8",
+        "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/medium-deep-neutral-n6-7-8/071249017340_t1.png?w=360&rev=b1a3256a76a64f43833e61961f7cc986&hash=24445F57F41D7A126C621BF3A80CB73135CCBE70",
+        "price": "828"
+    },
+    "blush": {
+      "name": "L'Oréal True Match Blush",
+      "shadeName": "Bare Honey",
+      "shadeHex": "#f2b596",
+      "shadeCode": "W1-2",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017449_t1.png?w=360&rev=b5a93182483443bcb24efb2a2f876eb3&hash=22C096ED2FF3F6357F0AC64567EC9D93773D454D",
+      "price": "775"
+    },
+    "eyeliner": {
+      "name": "L'Oreal Paris Matte Signature Eyeliner",
+      "shadeName": "Black",
+      "shadeHex": "#000000",
+      "shadeCode": "02",
+      "image": "https://www.lorealparis.co.in/matte-signature/liner-brown",
+      "price": "849"
+      
+    },
+    "lipstick": {
+      "name": "L'Oréal Rouge Signature Matte Liquid Lipstick",
+      "shadeName": "I Lead",
+      "shadeHex": "#A41F0D",
+      "shadeCode": "129",
+      "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-129-lead",
+      "price": "809"
+    }
+
+
+  },
+  "addons": {},
+  "tools": {}
+},
+{
+  "name": "Sporty",
+  "asset": "./assets/sporty.png",
+  "products": {
+
+    "foundation": {
+     
+      "name": "Pro-Matte Foundation",
+      "shadeName": "Sun Beige",
+      "shadeHex": "#daa271",
+      "shadeCode": "106",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/foundation-makeup/infallible-pro-matte-foundation/sun-beige-106/071249293058_t1-v2.png?w=360&rev=df5d432c7965446087634b0c3b987ace&hash=3F273ADC2B1C08C710179C927F45BE6582B9C083",
+      "price": "3665"
+    },
+    "concealer": {
+      "name": "L'Oréal True Match Concealer",
+      "shadeName": "Fair/Light Warm",
+      "shadeHex": "#fedbb8",
+      "shadeCode": "W1-2-3",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/fair-light-warm-w1-2-3/071249017241_t1.png?w=360&rev=a6ad4a0da7da4420ad6385ddb11bf312&hash=1C24A122632ECFA9C6973B72EE8770620690F9C5",
+      "price": "828"
+    },
+    "blush": {
+      "name": "L'Oréal True Match Blush",
+      "shadeName": "Precious Peach",
+      "shadeHex": "#c69073",
+      "shadeCode": "N1-2",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017470_t1.png?w=360&rev=822ef153ea974d1c8e6c0b19013881f7&hash=EEFFF8129D691BED260069A5EF00C38F43A4B960",
+      "price": "775"
+    },
+    "eyeliner": {
+      "name": "Kajal Magique - Supreme Black",
+      "shadeName": "Black",
+      "shadeHex": "#000000",
+      "shadeCode": "01",
+      "image": "https://www.lorealparis.co.in/kajal-magique/supreme-black",
+      "price": "250"
+      
+    },
+    "lipstick": {
+      "name": "L'Oréal Rouge Signature Matte Liquid Lipstick",
+      "shadeName": "I Explore",
+      "shadeHex": "#7D463F",
+      "shadeCode": "116",
+      "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-116-i-explore",
+      "price": "809"
+    }
+
+
+  },
+  "addons": {},
+  "tools": {}
+},
+{
+  "name": "Christmas",
+  "asset": "./assets/christmas.png",
+  "products": {
+    "foundation":
+    {
+     "name": "Pro-Matte Foundation",
+      "shadeName": "Classic Tan",
+      "shadeHex": "#c27f48",
+      "shadeCode": "109",
+      "image": "https://es.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/foundation-makeup/infallible-pro-matte-foundation/classic-tan-109/071249293089_t1.png?w=360&rev=18153610e6464dfbaa425e4746bf45b4&hash=B083C46A846C8DF7B8D5C79F49A096B23E7CAA64",
+      "price": "3665"
+    },
+    "concealer": {
+     "name": "L'Oréal True Match Concealer",
+      "shadeName": "Medium/Deep Neutral",
+      "shadeHex": "#d29365",
+      "shadeCode": "N6-7-8",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/medium-deep-neutral-n6-7-8/071249017340_t1.png?w=360&rev=b1a3256a76a64f43833e61961f7cc986&hash=24445F57F41D7A126C621BF3A80CB73135CCBE70",
+      "price": "828"
+    },
+    "blush": {
+      "name": "L'Oréal True Match Blush",
+      "shadeName": "Subtle Sable",
+      "shadeHex": "#cc8970",
+      "shadeCode": "W5-6",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017463_t1.png?w=360&rev=5518ab5d0a6847ba84fe7ab9a9611126&hash=2ACBE9AD2637619A7D54D77EBEC96E48CB55DB7F",
+      "price": "775"
+    },
+    "eyebrow": {
+        "name": "L'Oréal Brow Artist Xpert",
+    "shadeName": "Ebony",
+    "shadeHex": "#f2f2f2",
+    "shadeCode": "109",
+    "image": "https://www.lorealparis.co.in/brow-artist/xpert-eyebrow-pencil-109-ebony",
+    "price": "849"
+    },
+    "lipstick": {
+      "name": "L'Oréal Rouge Signature Matte Liquid Lipstick",
+      "shadeName": "I Enjoy",
+      "shadeHex": "#9D3047",
+      "shadeCode": "103",
+      "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-103-i-enjoy",
+      "price": "809"
+    }
+  },
+  "addons": {},
+  "tools": {}
+},
+{
+  "name": "Dewy Delight",
+  "asset": "./assets/dewy_delight.png",
+  "products": {
+    "foundation": {
+      "name": "L'Oréal True Match Liquid Foundation",
+      "shadeName": "Rose Vanilla",
+      "shadeHex": "#e5c6b3",
+      "shadeCode": "2R2C2K",
+      "image": "https://www.bing.com/images/blob?bcid=r2dATXjyN8gGYA",
+      "price": "3665"
+    },
+    "concealer": {
+      "name": "L'Oréal True Match Concealer",
+      "shadeName": "Medium/Deep Cool",
+      "shadeHex": "#a77043",
+      "shadeCode": "C6-7-8",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/medium-deep-cool-c6-7-8/071249017357_t1.png?w=360&rev=b157fa5b245545bd902cceef5b0d3af8&hash=328EACF729BB053DA9D6C8C5DF69ED18F52F4929",
+      "price": "828"
+    },
+    "blush": {
+      "name": "L'Oréal True Match Blush",
+      "shadeName": "Sweet Ginger",
+      "shadeHex": "#b97e59",
+      "shadeCode": "N7-8",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/blush/true-match-blush/sweet-ginger-n7-8/10-11-23-en/071249041840-t1.png?w=360&rev=ab159764cf96492e8be1b6dca0b53681&hash=CE1CA2EB865396260EB7629D402B77A8223D352C",
+      "price": "775"
+    },
+    "eyebrow": {
+      "name": "L'Oréal Brow Artist Xpert",
+      "shadeName": "Cool Brunette",
+      "shadeHex": "#8b4513",
+      "shadeCode": "107",
+      "image": "https://www.lorealparis.co.in/brow-artist/xpert-107-cool-brunette",
+      "price": "849"
+    },
+    "lipstick": {
+      "name": "L'Oréal Rouge Signature Matte Liquid Lipstick ",
+      "shadeName": "Rule",
+      "shadeHex": "#a75053",
+      "shadeCode": "105",
+      "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/lip-makeup/6902395718239_packshot.png?w=360&rev=c4526c7c89494429be48bfb56e5548eb&hash=99A1FB37ABD1EF2BF31944CF54C216C66D19C75B",
+      "price": "899"
+    }
+  },
+  "addons": {},
+  "tools": {}
+}
+]
