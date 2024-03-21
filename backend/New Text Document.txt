@@ -1,1 +1,0 @@
-this app required django, python-opencv,dlib,numpy,PIL for executing the project
