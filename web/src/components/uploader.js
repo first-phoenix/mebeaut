@@ -4,7 +4,7 @@ import { fileToBase64 } from 'file64'
 import { AppContext } from '../context/store'
 
 function Uploader() {
-  const { setUserPhoto, setInitImg } = useContext(AppContext)
+  const { savePhoto, setInitImg } = useContext(AppContext)
   const navigate = useNavigate()
 
   const [image, setImage] = useState(null)
@@ -17,18 +17,15 @@ function Uploader() {
       let temp = await fileToBase64(imageRef.current.files[0])
       
       if(temp) {
-        console.log(temp)
         setInitImg(temp)
       }
     }
   }
 
   const loadLook = () => {
-    setUserPhoto(image)
+    savePhoto(image)
     navigate('/tryon')
   }
-
-
 
   return (
     <div>

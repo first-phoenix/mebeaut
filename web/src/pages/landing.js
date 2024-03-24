@@ -1,30 +1,21 @@
 import { FaCameraRetro, FaFileUpload } from 'react-icons/fa'
 import CustomCapture from '../components/capture'
-import CustomModal from '../components/modal'
+import CustomModal from '../utils/modal'
 import FileUploader from '../components/uploader'
  
-import { useContext, useState } from 'react'
-import { AppContext } from '../context/store'
- 
+// Styles for the landing backdrop image
 const customStyles = {
-    'background': 'url("./assets/home.jpg") no-repeat center',
-    'min-height': '100vh',
-    'background-size': 'cover',
-    'position': 'relative'
+  'background': 'url("./assets/home.jpg") no-repeat center',
+  'min-height': '100vh',
+  'background-size': 'cover',
+  'position': 'relative'
 }
  
- 
- 
- 
-function Home() {  
-  const { products } = useContext(AppContext)
- 
-  console.log(products)
- 
+function Home() {   
   return (
     <div style = { customStyles } className = "flex flex-col items-center justify-center gap-12 h-screen">
       <p className = "bg-gray-200 bg-opacity-75 rounded-lg text-center text-xl px-12 py-12">
-      <span class="font-bold text-2xl mb-3 line-clamp-3 font-display">CRAFTING BEAUTY: Your Makeup, Your Rules!</span>
+      < span className = "font-bold text-2xl mb-3 line-clamp-3 font-display">CRAFTING BEAUTY: Your Makeup, Your Rules!</span>
         Empower your beauty journey with our platform – where confidence meets innovation.
         <br />
         Discover personalized tips,connect with beauty experts, and celebrate your unique glow.

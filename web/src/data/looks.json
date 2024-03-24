@@ -1,6 +1,6 @@
 [{
   "name": "Bridal",
-  "asset": "./assets/bridal.png",
+  "asset": "./assets/templates/bridal.png",
   "products": {
     "foundation": {
       "name": "Pro-Matte Foundation",
@@ -57,7 +57,7 @@
 },
 {
   "name": "No Makeup",
-  "asset": "./assets/no_makeup.png",
+  "asset": "./assets/templates/no_makeup.png",
   "products": {
     "foundation": {
       "name": "Pro-Matte Foundation",
@@ -105,7 +105,7 @@
 },
 {
   "name": "Barbie",
-  "asset": "./assets/barbie.png",
+  "asset": "./assets/templates/barbie.png",
   "products": {
 
     "foundation": {
@@ -155,9 +155,8 @@
 },
 {
   "name": "Corporate",
-  "asset": "./assets/corporate.png",
+  "asset": "./assets/templates/corporate.png",
   "products": {
-
     "foundation": {
       "name": "Pro-Matte Foundation",
       "shadeName": "Fresh Beige",
@@ -206,7 +205,7 @@
 },
 {
   "name": "Date",
-  "asset": "./assets/date.png",
+  "asset": "./assets/templates/date.png",
   "products": {
 
     "foundation": {
@@ -257,9 +256,8 @@
 },
 {
   "name": "Mob-Wife",
-  "asset": "./assets/mob_wife.png",
+  "asset": "./assets/templates/mob_wife.png",
   "products": {
-
     "foundation": {
       "name": "Pro-Matte Foundation",
         "shadeName": "Golden Beige",
@@ -301,19 +299,15 @@
       "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-129-lead",
       "price": "809"
     }
-
-
   },
   "addons": {},
   "tools": {}
 },
 {
   "name": "Sporty",
-  "asset": "./assets/sporty.png",
+  "asset": "./assets/templates/sporty.png",
   "products": {
-
-    "foundation": {
-     
+    "foundation": {  
       "name": "Pro-Matte Foundation",
       "shadeName": "Sun Beige",
       "shadeHex": "#daa271",
@@ -354,18 +348,15 @@
       "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-116-i-explore",
       "price": "809"
     }
-
-
   },
   "addons": {},
   "tools": {}
 },
 {
   "name": "Christmas",
-  "asset": "./assets/christmas.png",
+  "asset": "./assets/templates/christmas.png",
   "products": {
-    "foundation":
-    {
+    "foundation": {
      "name": "Pro-Matte Foundation",
       "shadeName": "Classic Tan",
       "shadeHex": "#c27f48",
@@ -411,7 +402,7 @@
 },
 {
   "name": "Dewy Delight",
-  "asset": "./assets/dewy_delight.png",
+  "asset": "./assets/templates/dewy_delight.png",
   "products": {
     "foundation": {
       "name": "L'Oréal True Match Liquid Foundation",

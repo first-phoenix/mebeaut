@@ -1,8 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom'
 import Home from './pages/landing'
 import TryOn from './pages/tryon'
-import CartPage from './pages/cartpage'
+import Cart from './pages/cart'
 
+// Inner pages should not open on warmup
 const AppRouter = createBrowserRouter([
   {
     path: "/",
@@ -14,7 +15,7 @@ const AppRouter = createBrowserRouter([
   },
   {
     path: "/cart",
-    element: <CartPage />
+    element: <Cart />
   }
 ])
 

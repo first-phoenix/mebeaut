@@ -4,7 +4,7 @@ import Webcam from 'react-webcam'
 import { AppContext } from '../context/store'
  
 const CustomCapture = () => {
-  const { setInitImg, setUserPhoto } = useContext(AppContext)
+  const { setInitImg, savePhoto } = useContext(AppContext)
   const navigate = useNavigate()
  
   const webcamRef = useRef(null)
@@ -21,18 +21,18 @@ const CustomCapture = () => {
  
   const loadLook = () => {
     setInitImg(imageSrc)
-    setUserPhoto(imageSrc)
+    savePhoto(imageSrc)
     navigate('/tryon')
   }
  
   return (
-    <div className = "">
+    <>
       { imageSrc ? <img src = { imageSrc } /> : <Webcam height="900" width = '700' ref = { webcamRef } />}
       <div className = "font-bold text-xl">
         { imageSrc ? <button onClick = { retake }>Retake photo</button> : <button onClick = { captureImage }>Capture photo</button> }<br/>
-        { imageSrc && <button onClick = { loadLook }>    Apply some magic!</button> }
+        { imageSrc && <button onClick = { loadLook }>Apply some magic!</button> }
       </div>
-    </div>
+    </>
   )
 }
  

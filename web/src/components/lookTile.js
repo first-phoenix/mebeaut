@@ -1,7 +1,6 @@
-
 import { useContext } from 'react'
 import { AppContext } from '../context/store'
-import { FaStar } from "react-icons/fa"
+import { FaStar } from 'react-icons/fa'
  
 export default function LookTile({ item }) {
   const { setLook } = useContext(AppContext)
