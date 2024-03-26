@@ -3,6 +3,7 @@ import Modal from 'react-modal'
 import { AppContext } from '../context/store'
 import Tooltip from '../utils/tooltip'
 import { LuPlus } from 'react-icons/lu'
+import { IoMdAddCircle } from "react-icons/io";
  
 // Styles for the pop-up
 const customStyles = {
@@ -14,7 +15,7 @@ const customStyles = {
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
     backgroundColor: "white",
-    width: 800
+    width: 650
   }
 }
  
@@ -24,7 +25,7 @@ export default function ShadePalette({ setSelected }) {
   const [open, setOpen] = useState(false)
   
   return (
-    <div className = "absolute bottom-2 right-4">
+    <div className = "absolute bottom-2 right-[12%]">
       <div className = "relative w-fit">
         <div className = "flex flex-col">
           {
@@ -44,18 +45,19 @@ export default function ShadePalette({ setSelected }) {
           {
             Object.keys(look.products).map((keyName, index) => {
               return (                         
-                <div key = { index } className = "flex flex-row items-center gap-6 my-6">
-                  <img className = "h-20 w-16" src = { look.products[keyName].image } />
+                <div key = { index } className = "grid grid-cols-4 border-black border-b-2 py-2 items-center font-cust4 gap-6 my-6">
+                  <img className = "h-24 w-20" src = { look.products[keyName].image } />
                   <div className = "flex flex-row justify-between">
                     { look.products[keyName].name }
-                  </div>
-                  <div className = "flex flex-row justify-between">
+                    <br/>
                     { look.products[keyName].shadeCode }
                   </div>
+                  
                   <div className = "flex flex-row justify-between">
                     Rs. { look.products[keyName].price }
                   </div>
-                  <button onClick = { () => addToCart(look.products[keyName]) }>ADD</button>
+                  <button className=' items-center' onClick = { () => addToCart(look.products[keyName]) }><IoMdAddCircle size={32}/></button>
+                  
                 </div>                            
               )
             })

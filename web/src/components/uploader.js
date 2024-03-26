@@ -28,7 +28,7 @@ function Uploader() {
   }
 
   return (
-    <div>
+    <div className='font-bold text-xl'>
       <input type = "file" accept = "image/*" ref = { imageRef } onChange = { createImageURL } />
       { image && <img src = { image } /> }
       { image && <button onClick = { loadLook }>Apply Some Magic</button> }

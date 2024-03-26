@@ -142,7 +142,38 @@
       "shadeCode": "02",
       "image": "https://www.lorealparis.co.in/matte-signature/liner-brown",
       "price": "849"
+    },
+
+    {
+      "name": "L'Oreal Paris Matte Signature Eyeliner",
+      "shadeName": "Burgundy",
+      "shadeHex": "#972850",
+      "shadeCode": "03",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249403730_t1.png?w=360&rev=85e7966c90944483975468017bea6fb2&hash=2BB69CFF3FD5C0D80D058899EBE2145AB2E1DCA2",
+      "price": "849"
+    },
+    {
+      "name": "L'Oreal Paris Matte Signature Eyeliner",
+      "shadeName": "Cobalt Blue",
+      "shadeHex": "#424AAE",
+      "shadeCode": "04",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249403716_t1.png?w=360&rev=4cc2f2a0a2364036a562fb4612d7b3e9&hash=994CE836D652673CE2CB0730CC9DF07EB8040248",
+      "price": "849"
+    },
+    {
+      "name": "L'Oreal Infallible Pro-Last Eyeliner",
+      "shadeName": "Purple",
+      "shadeHex": "#71498F",
+      "shadeCode": "02",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249357651_t1.png?w=360&rev=10d21ee42a874fd180fc266d4b0bba66&hash=FB0451C992E02F01113E073F319A7847BAEC568E",
+      "price": "749"
     }
+
+
+
+    
+
+
   ],
   "eyebrow": [  
     {
@@ -160,7 +191,32 @@
       "shadeCode": "109",
       "image": "https://www.lorealparis.co.in/brow-artist/xpert-eyebrow-pencil-109-ebony",
       "price": "849"
+    },
+    {
+      "name": "L'Oréal Tinted Eyebrow Gel",
+      "shadeName": "Blonde",
+      "shadeHex": "#8F775C",
+      "shadeCode": "01",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249376386_t1.png?w=360&rev=a657d5816610460e84821bdcb4ac7d3e&hash=F8E7FA479B8E977BAA3BF399EECA8FF56A1792D0",
+      "price": "849"
+    },
+    {
+      "name": "L'Oréal Infallible 24H Volumizing Brow Mascara",
+      "shadeName": "Auburn",
+      "shadeHex": "#754B33",
+      "shadeCode": "02",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/makeup/eyes/2023/infallible-brow-mascara/unique-assets/2023_oap_makeup_infaillible_brow_mascara_us-auburn_opened_pack_front.png?w=360&rev=ee40a7e60d414e169648607999e5c5ff&hash=982DEB2694A80FDB69261A19BF951DAAFA717309",
+      "price": "849"
+    },
+    {
+      "name": "L'Oréal Brow Stylist ",
+      "shadeName": "Ash Brown",
+      "shadeHex": "#5F442F",
+      "shadeCode": "05",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/makeup/ryan-e-retail-project-updates-3/brow-stylist-definer/individual-assets/ash-brown/pack-ash-brown.png?w=360&rev=bcadd64d86fb4ef6997e0c4f51d020a9&hash=AAD210BFA382F2335F789EEC0606332522C53513",
+      "price": "849"
     }
+    
   ],
   "lipstick":[
     {

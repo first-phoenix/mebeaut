@@ -31,7 +31,7 @@
       "shadeName": "Brown",
       "shadeHex": "#8A4C4A",
       "shadeCode": "02",
-      "image": "https://www.lorealparis.co.in/matte-signature/liner-brown",
+      "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/eye-makeup/6902395753261_packshot.png?w=360&rev=d1204a211b9f4586a10089f123db1948&hash=C87317D1C704C543AC95981243C9D723CCB21090",
       "price": "849"
     },
     "lipstick": {
@@ -39,7 +39,7 @@
       "shadeName": "I'm worth it",
       "shadeHex": "#8C0C0D",
       "shadeCode": "115",
-      "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-115-i-am-worth-it",
+      "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/lip-makeup/6902395724636_packshot.png?w=360&rev=559d9935429541a781f5fed3900b950a&hash=61038CCCBA4512D7CDDB1F84A4EA5549B3AB450E",
       "price": "809"
     }
   },
@@ -83,12 +83,12 @@
       "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017463_t1.png?w=360&rev=5518ab5d0a6847ba84fe7ab9a9611126&hash=2ACBE9AD2637619A7D54D77EBEC96E48CB55DB7F",
       "price": "775"
     },
-    "eyebrow": {
-      "name": "L'Oréal Brow Artist Xpert",
-      "shadeName": "Cool Brunette",
-      "shadeHex": "#8B4513",
-      "shadeCode": "107",
-      "image": "https://www.lorealparis.co.in/brow-artist/xpert-107-cool-brunette",
+    "eyeliner": {
+      "name": "L'Oreal Paris Matte Signature Eyeliner",
+      "shadeName": "Brown",
+      "shadeHex": "#8A4C4A",
+      "shadeCode": "02",
+      "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/eye-makeup/6902395753261_packshot.png?w=360&rev=d1204a211b9f4586a10089f123db1948&hash=C87317D1C704C543AC95981243C9D723CCB21090",
       "price": "849"
     },
     "lipstick": {
@@ -96,7 +96,7 @@
       "shadeName": "I Explore",
       "shadeHex": "#7D463F",
       "shadeCode": "116",
-      "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-116-i-explore",
+      "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/lip-makeup/6902395724643_packshot.png?w=360&rev=71b73c63fa7f42798df2a0def76b0ad3&hash=1DE011C47441659C53A3D86FD56485CE46A669AD",
       "price": "809"
     }
   },
@@ -137,16 +137,15 @@
       "shadeName": "Black",
       "shadeHex": "#000000",
       "shadeCode": "01",
-      "image": "https://www.lorealparis.co.in/matte-signature/liner-black",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249403709_t1.png?w=360&rev=6c9fa51d8ee0411faf9a5c5e7b96f223&hash=D8AC8F86ABE8A8A96029444E5DBA26EE85FBEBF7",
       "price": "849"
-      
     },
     "lipstick": {
       "name": "L'Oréal Rouge Signature Matte Liquid Lipstick",
       "shadeName": "I Enjoy",
       "shadeHex": "#9D3047",
       "shadeCode": "103",
-      "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-103-i-enjoy",
+      "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/lip-makeup/6902395718130_packshot.png?w=360&rev=86a725223f65404f8196818025cb875f&hash=A2907E96432A6ACFA4379D20C54846C1C026494E",
       "price": "809"
     }
   },
@@ -186,7 +185,7 @@
       "shadeName": "Black",
       "shadeHex": "#000000",
       "shadeCode": "01",
-      "image": "https://m.media-amazon.com/images/I/81JcxiHvxML._SX679_.jpg",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249403709_t1.png?w=360&rev=6c9fa51d8ee0411faf9a5c5e7b96f223&hash=D8AC8F86ABE8A8A96029444E5DBA26EE85FBEBF7",
       "price": "849"
       
     },
@@ -195,7 +194,7 @@
       "shadeName": "I Explore",
       "shadeHex": "#7D463F",
       "shadeCode": "116",
-      "image": "https://m.media-amazon.com/images/I/41SrO7pmR5L._SX679_.jpg",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249369982_t1.png?w=360&rev=82acb8fa71034d708d775d2657b2ef15&hash=A4EAD9EDB9B0D679891ACFE7816149B1D4F152D8",
       "price": "809"
     }
 
@@ -237,7 +236,7 @@
     "shadeName": "Brown",
     "shadeHex": "#8A4C4A",
     "shadeCode": "02",
-    "image": "https://www.lorealparis.co.in/matte-signature/liner-brown",
+    "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/eye-makeup/6902395753261_packshot.png?w=360&rev=d1204a211b9f4586a10089f123db1948&hash=C87317D1C704C543AC95981243C9D723CCB21090",
     "price": "849"
     
   },
@@ -246,7 +245,7 @@
     "shadeName": "I Lead",
     "shadeHex": "#A41F0D",
     "shadeCode": "129",
-    "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-129-lead",
+    "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/lip-makeup/6902395742739_packshot.png?w=360&rev=24757d2e6fe24690abf0c173396bd2eb&hash=53083847CC7BCDE628A2FA80B12B7A1CAFED5DC0",
     "price": "809"
   }
 
@@ -284,10 +283,10 @@
     },
     "eyeliner": {
       "name": "L'Oreal Paris Matte Signature Eyeliner",
-      "shadeName": "Black",
+      "shadeName": "Brown",
       "shadeHex": "#000000",
       "shadeCode": "02",
-      "image": "https://www.lorealparis.co.in/matte-signature/liner-brown",
+      "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/eye-makeup/6902395753261_packshot.png?w=360&rev=d1204a211b9f4586a10089f123db1948&hash=C87317D1C704C543AC95981243C9D723CCB21090",
       "price": "849"
       
     },
@@ -296,7 +295,7 @@
       "shadeName": "I Lead",
       "shadeHex": "#A41F0D",
       "shadeCode": "129",
-      "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-129-lead",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249396810_t1.png?w=360&rev=b6936d9c1c624e308f218c15dc22d807&hash=611E7F05A482450E85DD82D310E41203D66E255D",
       "price": "809"
     }
   },
@@ -345,7 +344,7 @@
       "shadeName": "I Explore",
       "shadeHex": "#7D463F",
       "shadeCode": "116",
-      "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-116-i-explore",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249369982_t1.png?w=360&rev=82acb8fa71034d708d775d2657b2ef15&hash=A4EAD9EDB9B0D679891ACFE7816149B1D4F152D8",
       "price": "809"
     }
   },
@@ -380,20 +379,20 @@
       "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017463_t1.png?w=360&rev=5518ab5d0a6847ba84fe7ab9a9611126&hash=2ACBE9AD2637619A7D54D77EBEC96E48CB55DB7F",
       "price": "775"
     },
-    "eyebrow": {
-        "name": "L'Oréal Brow Artist Xpert",
-    "shadeName": "Ebony",
-    "shadeHex": "#f2f2f2",
-    "shadeCode": "109",
-    "image": "https://www.lorealparis.co.in/brow-artist/xpert-eyebrow-pencil-109-ebony",
-    "price": "849"
+    "eyeliner": {
+      "name": "L'Oreal Paris Matte Signature Eyeliner",
+      "shadeName": "Black",
+      "shadeHex": "#000000",
+      "shadeCode": "01",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249403709_t1.png?w=360&rev=6c9fa51d8ee0411faf9a5c5e7b96f223&hash=D8AC8F86ABE8A8A96029444E5DBA26EE85FBEBF7",
+      "price": "849"
     },
     "lipstick": {
       "name": "L'Oréal Rouge Signature Matte Liquid Lipstick",
       "shadeName": "I Enjoy",
       "shadeHex": "#9D3047",
       "shadeCode": "103",
-      "image": "https://www.lorealparis.co.in/rouge-signature/liquid-lipstick-103-i-enjoy",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249369890_t1.png?w=360&rev=cb130e62bfae4cc7be37384a9c62f9b9&hash=02E19AB8C78A96394615E0C7D986330211049EEC",
       "price": "809"
     }
   },
@@ -428,17 +427,17 @@
       "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/blush/true-match-blush/sweet-ginger-n7-8/10-11-23-en/071249041840-t1.png?w=360&rev=ab159764cf96492e8be1b6dca0b53681&hash=CE1CA2EB865396260EB7629D402B77A8223D352C",
       "price": "775"
     },
-    "eyebrow": {
-      "name": "L'Oréal Brow Artist Xpert",
-      "shadeName": "Cool Brunette",
-      "shadeHex": "#8b4513",
-      "shadeCode": "107",
-      "image": "https://www.lorealparis.co.in/brow-artist/xpert-107-cool-brunette",
+    "eyeliner": {
+      "name": "L'Oreal Paris Matte Signature Eyeliner",
+      "shadeName": "Black",
+      "shadeHex": "#000000",
+      "shadeCode": "01",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249403709_t1.png?w=360&rev=6c9fa51d8ee0411faf9a5c5e7b96f223&hash=D8AC8F86ABE8A8A96029444E5DBA26EE85FBEBF7",
       "price": "849"
     },
     "lipstick": {
       "name": "L'Oréal Rouge Signature Matte Liquid Lipstick ",
-      "shadeName": "Rule",
+      "shadeName": "I Rule",
       "shadeHex": "#a75053",
       "shadeCode": "105",
       "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/lip-makeup/6902395718239_packshot.png?w=360&rev=c4526c7c89494429be48bfb56e5548eb&hash=99A1FB37ABD1EF2BF31944CF54C216C66D19C75B",
