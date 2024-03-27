@@ -18,12 +18,12 @@ export default function ShadePicker() {
   }
  
   return (
-    <div className = "bg-white bg-opacity-45 flex flex-col items-center gap-8 rounded-lg w-[90%] py-5 my-3">
+    <div className = "bg-white flex flex-col items-center gap-8 rounded-lg w-[90%] py-5 my-3">
       <h2 className = "text-dark font-semibold text-[1.25rem]">{ parameter.charAt(0).toUpperCase() + parameter.slice(1) }</h2>
       <ul className = "grid grid-cols-5 gap-4 px-6">
         {
           shadeCatalogue[parameter].map((item, index) => {
-            let styleClass = look.products[parameter].shadeHex === item.shadeHex ? "border-white" : "border-[#111]"
+            let styleClass = look.products[parameter].shadeHex === item.shadeHex ? "border-black" : ""
  
             return ( <li key = { index } onClick = { () => changePalette(item) }>
               <span className = { "block p-1 border-[2.5px] " + styleClass + " hover:border-gray-500 rounded-full transition ease-in duration-200" }>
