@@ -22,6 +22,8 @@ export default function Navbar() {
             }
             {
                 location.pathname === '/' && <div>
+                    <span className = "btn_nav">About</span>
+                    <span className = "btn_nav">Contact</span>
                     <span className = "btn_nav">Log In</span>
                     <span className = "btn_nav">Sign Up</span>
                 </div>

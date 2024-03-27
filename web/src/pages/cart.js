@@ -5,7 +5,7 @@ import { AppContext } from '../context/store'
 import { FaTrashAlt } from 'react-icons/fa'
  
 function Cart() {
-  const { userPhoto, cartProds } = useContext(AppContext)
+  const { userPhoto, cartProds, deleteItem } = useContext(AppContext)
   const navigate = useNavigate()
  
   useEffect(() => {
@@ -18,16 +18,18 @@ function Cart() {
     <section section className = "flex flex-col items-end px-56 py-12">
       {/* Tabled contents for cart items */}
       <table className = "table-auto border-separate border-spacing-6">
-        <thead className = "bg-[#ecf0ed]">
-         <tr className = "align-middle">
-          <th>ITEM</th>
-          <th>PRICE</th>
-          <th></th>
-         </tr>
-        </thead>
+        {
+          cartProds.length > 0 && <thead className = "bg-[#ecf0ed]">
+            <tr className = "align-middle">
+              <th>ITEM</th>
+              <th>PRICE</th>
+              <th></th>
+            </tr>
+          </thead>
+        }
         <tbody>
           {
-            cartProds && cartProds.map((item, index) => {
+            cartProds.length > 0 && cartProds.map((item, index) => {
               return (
                 <tr key = { index }>
                   <td className = "align-middle w-[50%] h-auto">
@@ -41,7 +43,7 @@ function Cart() {
                   </td>
                   <td className = "mx-auto font-semibold text-center">Rs.{ item.price }</td>
                   <td className = "align-middle text-center">
-                    <FaTrashAlt className = "m-0 h-5 w-5 cursor-pointer" />
+                    <FaTrashAlt className = "m-0 h-5 w-5 cursor-pointer" onClick = { () => deleteItem(item) } />
                   </td>
                 </tr>
               )
@@ -49,7 +51,9 @@ function Cart() {
           }
         </tbody>
       </table>
-      <button className = "bg-black text-white w-fit rounded-md py-2 px-6 m-12">Place Order</button>
+      { 
+        cartProds.length > 0 && <button className = "bg-black text-white w-fit rounded-md py-2 px-6 m-12">Place Order</button>
+      }
     </section>
   )
 }

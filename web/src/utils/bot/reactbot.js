@@ -8,7 +8,10 @@ import './addon.css'
 export default function ReactBot() {
     return (
         <>
-            <Chatbot config = { config } messageParser = { MessageParser } actionProvider = { ActionProvider } />            
+            <Chatbot config = { config } 
+                     headerText = "Ask Bella"
+                     messageParser = { MessageParser } 
+                     actionProvider = { ActionProvider } />            
         </>
     )
 }

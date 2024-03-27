@@ -57,6 +57,13 @@ const ProviderWrapper = ({ children }) => {
         window.sessionStorage.setItem('prods', JSON.stringify(temp))
     }
 
+    function deleteItem(item) {
+        let temp = cartProds.filter((prod) => prod !== item)
+
+        setCartProds(temp)
+        window.sessionStorage.setItem('prods', JSON.stringify(temp))
+    }
+
     // Regex to convert color vales from hex to rgb
     function hexToRgb(hex) {
         var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
@@ -76,7 +83,8 @@ const ProviderWrapper = ({ children }) => {
       parameter, 
       setParameter,
       cartProds, 
-      addToCart
+      addToCart,
+      deleteItem
     }
     
     return (
