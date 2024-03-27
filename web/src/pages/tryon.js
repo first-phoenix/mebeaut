@@ -21,18 +21,18 @@ function TryOn() {
   }, [userPhoto, navigate])
  
   return (
-    <div className = "flex flex-row gap-8">
-      <div className = "absolute top-[18%] left-[5%] overflow-hidden">
-        <div className = "relative">
+    <div className = " flex flex-row gap-8 ">
+      <div className = "absolute top-[18%] left-[8%] overflow-hidden">
+        <div className = "relative ">
           {/* User's picture from webcam */}
           <img className = "rounded-md" src = { userPhoto } />
           {/* The product range for selected look */}
-          <ShadePalette />
+          < ShadePalette  />
         </div>
         {/* Catalogue of products for current selection */}
         { parameter !== '' && <ShadePicker /> }
       </div>
-      <div className = "grid grid-cols-2 absolute top-[20%] bottom-0 right-[5%] overflow-y-auto gap-9">
+      <div className = "grid grid-cols-2 absolute top-[20%] bottom-0 right-[8%] overflow-y-auto gap-9">
       {
         data.map((item, index) => {
             let props = { item }

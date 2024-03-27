@@ -6,7 +6,7 @@ export default function Navbar() {
     const location = useLocation()
 
     return (
-        <nav className = "bg-[#1D1823] flex flex-row items-center justify-between h-[10vh] round py-2 px-16">
+        <nav className = "bg-[#070707] flex flex-row items-center justify-between h-[11vh] round py-2 px-16">
             <img src="./assets/logo.png" className = "h-16 w-24" />
             { 
                 location.pathname === '/tryon' && <div className = "flex flex-row items-center">

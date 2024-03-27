@@ -16,8 +16,8 @@
 }
 
 body {
-    @apply bg-gray-200 h-screen overflow-hidden;
-}
+    @apply bg-gradient-to-l from-[#1a0816] via-[#411d3adc] to-[#1a0816]  w-full overflow-hidden;
+} 
 
 .btn_nav {
     @apply text-white text-lg cursor-pointer mr-6;

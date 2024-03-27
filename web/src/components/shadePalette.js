@@ -25,7 +25,7 @@ export default function ShadePalette({ setSelected }) {
   const [open, setOpen] = useState(false)
   
   return (
-    <div className = "absolute bottom-2 right-[12%]">
+    <div className = "absolute bottom-2 right-[4%]">
       <div className = "relative w-fit">
         <div className = "flex flex-col">
           {

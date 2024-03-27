@@ -6,7 +6,7 @@ export default function LookTile({ item }) {
   const { setLook } = useContext(AppContext)
  
   return (
-    <div className = "bg-white hover:bg-[#aea4ae9d] flex justify-between items-center px-10 text-center rounded-lg py-6" onClick = { () => setLook(item) }>
+    <div className = "bg-white opacity-85 hover:shadow-lg hover:bg-[#d2d0d0] flex justify-between items-center px-10 text-center rounded-lg py-6" onClick = { () => setLook(item) }>
       <div className = "rounded-lg ">
         <img className = "rounded-full h-28 w-28" src = { item.asset } />
       </div>
