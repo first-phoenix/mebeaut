@@ -22,3 +22,7 @@ body {
 .btn_nav {
     @apply text-white text-lg cursor-pointer mr-6;
 }
+
+video {
+    @apply w-2/3 mx-auto;
+}

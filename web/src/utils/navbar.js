@@ -11,7 +11,7 @@ export default function Navbar() {
 
     return (
         <nav className = "bg-[#070707] flex flex-row items-center justify-between h-[11vh] round py-2 px-16">
-            <img src="./assets/logo.png" className = "h-16 w-24" />
+            <img src="./assets/logo.png" className = "h-32 w-44" />
             { 
                 location.pathname === '/tryon' && <div className = "flex flex-row items-center">
                     <div class = "flex flex-row relative items-center mr-6">

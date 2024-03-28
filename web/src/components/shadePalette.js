@@ -15,7 +15,8 @@ const customStyles = {
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
     backgroundColor: "white",
-    width: 650
+    textAlign: "end",
+    width: 600
   }
 }
  
@@ -23,6 +24,7 @@ export default function ShadePalette() {
   const { look, setParameter, addToCart } = useContext(AppContext)
  
   const [open, setOpen] = useState(false)
+  const [tut, setTut] = useState(false)
   
   return (
     <div className = "absolute bottom-2 right-[6%]">
@@ -46,7 +48,7 @@ export default function ShadePalette() {
             Object.keys(look.products).map((keyName, index) => {
               return (                         
                 <div key = { index } className = "grid grid-cols-4 border-black border-b-2 py-2 items-center font-cust4 gap-6 my-6">
-                  <img className = "h-24 w-20" src = { look.products[keyName].image } />
+                  <img className = "h-16 w-12" src = { look.products[keyName].image } />
                   <div className = "flex flex-row justify-between">
                     { look.products[keyName].name }
                     <br/>
@@ -61,6 +63,12 @@ export default function ShadePalette() {
               )
             })
           }
+          <button className = "bg-black text-white w-fit rounded-md py-2 px-6 m-8" onClick = { setTut }>Watch Tutorial</button>
+          <Modal isOpen = { tut } onRequestClose = { () => setTut(false) } style = { customStyles }> 
+            <video width = "300" height = "200" controls>
+              <source src = "./assets/tutorials/how_to_do.mp4" type = "video/mp4" />
+            </video>
+          </Modal>
         </Modal>
       </div>
     </div>

@@ -1,6 +1,58 @@
 [{
+  "name": "No Makeup",
+  "asset": "./assets/templates/no_makeup.png",
+  "trending": false,
+  "instagram": false,
+  "products": {
+    "foundation": {
+      "name": "Pro-Matte Foundation",
+      "shadeName": "Sun Beige",
+      "shadeHex": "#daa271",
+      "shadeCode": "106",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/foundation-makeup/infallible-pro-matte-foundation/sun-beige-106/071249293058_t1-v2.png?w=360&rev=df5d432c7965446087634b0c3b987ace&hash=3F273ADC2B1C08C710179C927F45BE6582B9C083",
+      "price": "3665"
+    },
+    "concealer": {
+      "name": "L'Oréal True Match Concealer",
+      "shadeName": "Medium/Deep Cool",
+      "shadeHex": "#a77043",
+      "shadeCode": "C6-7-8",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/medium-deep-cool-c6-7-8/071249017357_t1.png?w=360&rev=b157fa5b245545bd902cceef5b0d3af8&hash=328EACF729BB053DA9D6C8C5DF69ED18F52F4929",
+      "price": "828"
+    },
+    "blush": {
+      "name": "L'Oréal True Match Blush",
+      "shadeName": "Subtle Sable",
+      "shadeHex": "#cc8970",
+      "shadeCode": "W5-6",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017463_t1.png?w=360&rev=5518ab5d0a6847ba84fe7ab9a9611126&hash=2ACBE9AD2637619A7D54D77EBEC96E48CB55DB7F",
+      "price": "775"
+    },
+    "eyeliner": {
+      "name": "L'Oreal Paris Matte Signature Eyeliner",
+      "shadeName": "Brown",
+      "shadeHex": "#8A4C4A",
+      "shadeCode": "02",
+      "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/eye-makeup/6902395753261_packshot.png?w=360&rev=d1204a211b9f4586a10089f123db1948&hash=C87317D1C704C543AC95981243C9D723CCB21090",
+      "price": "849"
+    },
+    "lipstick": {
+      "name": "L'Oréal Rouge Signature Matte Liquid Lipstick ",
+      "shadeName": "I Explore",
+      "shadeHex": "#7D463F",
+      "shadeCode": "116",
+      "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/lip-makeup/6902395724643_packshot.png?w=360&rev=71b73c63fa7f42798df2a0def76b0ad3&hash=1DE011C47441659C53A3D86FD56485CE46A669AD",
+      "price": "809"
+    }
+  },
+  "addons": {},
+  "tools": {}
+},
+{
   "name": "Bridal",
   "asset": "./assets/templates/bridal.png",
+  "trending": false,
+  "instagram": false,
   "products": {
     "foundation": {
       "name": "Pro-Matte Foundation",
@@ -56,56 +108,10 @@
   "tools":{}
 },
 {
-  "name": "No Makeup",
-  "asset": "./assets/templates/no_makeup.png",
-  "products": {
-    "foundation": {
-      "name": "Pro-Matte Foundation",
-      "shadeName": "Sun Beige",
-      "shadeHex": "#daa271",
-      "shadeCode": "106",
-      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/foundation-makeup/infallible-pro-matte-foundation/sun-beige-106/071249293058_t1-v2.png?w=360&rev=df5d432c7965446087634b0c3b987ace&hash=3F273ADC2B1C08C710179C927F45BE6582B9C083",
-      "price": "3665"
-    },
-    "concealer": {
-      "name": "L'Oréal True Match Concealer",
-      "shadeName": "Medium/Deep Cool",
-      "shadeHex": "#a77043",
-      "shadeCode": "C6-7-8",
-      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/medium-deep-cool-c6-7-8/071249017357_t1.png?w=360&rev=b157fa5b245545bd902cceef5b0d3af8&hash=328EACF729BB053DA9D6C8C5DF69ED18F52F4929",
-      "price": "828"
-    },
-    "blush": {
-      "name": "L'Oréal True Match Blush",
-      "shadeName": "Subtle Sable",
-      "shadeHex": "#cc8970",
-      "shadeCode": "W5-6",
-      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017463_t1.png?w=360&rev=5518ab5d0a6847ba84fe7ab9a9611126&hash=2ACBE9AD2637619A7D54D77EBEC96E48CB55DB7F",
-      "price": "775"
-    },
-    "eyeliner": {
-      "name": "L'Oreal Paris Matte Signature Eyeliner",
-      "shadeName": "Brown",
-      "shadeHex": "#8A4C4A",
-      "shadeCode": "02",
-      "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/eye-makeup/6902395753261_packshot.png?w=360&rev=d1204a211b9f4586a10089f123db1948&hash=C87317D1C704C543AC95981243C9D723CCB21090",
-      "price": "849"
-    },
-    "lipstick": {
-      "name": "L'Oréal Rouge Signature Matte Liquid Lipstick ",
-      "shadeName": "I Explore",
-      "shadeHex": "#7D463F",
-      "shadeCode": "116",
-      "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/lip-makeup/6902395724643_packshot.png?w=360&rev=71b73c63fa7f42798df2a0def76b0ad3&hash=1DE011C47441659C53A3D86FD56485CE46A669AD",
-      "price": "809"
-    }
-  },
-  "addons": {},
-  "tools": {}
-},
-{
   "name": "Barbie",
   "asset": "./assets/templates/barbie.png",
+  "trending": true,
+  "instagram": false,
   "products": {
 
     "foundation": {
@@ -155,6 +161,8 @@
 {
   "name": "Corporate",
   "asset": "./assets/templates/corporate.png",
+  "trending": false,
+  "instagram": false,
   "products": {
     "foundation": {
       "name": "Pro-Matte Foundation",
@@ -205,6 +213,8 @@
 {
   "name": "Date",
   "asset": "./assets/templates/date.png",
+  "trending": false,
+  "instagram": true,
   "products": {
 
     "foundation": {
@@ -256,6 +266,8 @@
 {
   "name": "Mob-Wife",
   "asset": "./assets/templates/mob_wife.png",
+  "trending": true,
+  "instagram": false,
   "products": {
     "foundation": {
       "name": "Pro-Matte Foundation",
@@ -305,6 +317,8 @@
 {
   "name": "Sporty",
   "asset": "./assets/templates/sporty.png",
+  "trending": false,
+  "instagram": false,
   "products": {
     "foundation": {  
       "name": "Pro-Matte Foundation",
@@ -354,6 +368,8 @@
 {
   "name": "Christmas",
   "asset": "./assets/templates/christmas.png",
+  "trending": false,
+  "instagram": false,
   "products": {
     "foundation": {
      "name": "Pro-Matte Foundation",
@@ -402,6 +418,8 @@
 {
   "name": "Dewy Delight",
   "asset": "./assets/templates/dewy_delight.png",
+  "trending": false,
+  "instagram": true,
   "products": {
     "foundation": {
       "name": "L'Oréal True Match Liquid Foundation",

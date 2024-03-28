@@ -1,29 +1,12 @@
 
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../context/store'
-import Modal from 'react-modal'
 import { FaTrashAlt } from 'react-icons/fa'
- 
-// Styles for the pop-up
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    backgroundColor: "white",
-    width: 650
-  }
-}
 
 function Cart() {
   const { userPhoto, cartProds, deleteItem } = useContext(AppContext)
   const navigate = useNavigate()
-
-  const [open, setOpen] = useState(false)
  
   useEffect(() => {
     if(!userPhoto) {
@@ -69,16 +52,8 @@ function Cart() {
         </tbody>
       </table>
       { 
-        cartProds.length > 0 && <div className = "flex flex-row items-center">
-          <button className = "bg-black text-white w-fit rounded-md py-2 px-6 m-8" onClick = { setOpen }>Watch Tutorial</button>
-          <button className = "bg-black text-white w-fit rounded-md py-2 px-6">Place Order</button>
-        </div>
+        cartProds.length > 0 && <button className = "bg-black text-white w-fit rounded-md py-2 px-6">Place Order</button>
       }
-      <Modal isOpen = { open } onRequestClose = { () => setOpen(false) } style = { customStyles }> 
-        <video width = "300" height = "200" controls>
-          <source src = "./assets/tutorials/how_to_do.mp4" type = "video/mp4" />
-        </video>
-      </Modal>
     </section>
   )
 }
