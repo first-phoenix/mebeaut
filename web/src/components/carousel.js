@@ -4,9 +4,9 @@ import 'slick-carousel/slick/slick-theme.css'
 
 var settings = {
     dots: false,
-    arrows: false,
+    arrows: true,
     infinite: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2500,
     autoplay: true,
     slidesToShow: 1
   }

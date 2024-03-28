@@ -19,13 +19,13 @@ const customStyles = {
   }
 }
  
-export default function ShadePalette({ setSelected }) {
+export default function ShadePalette() {
   const { look, setParameter, addToCart } = useContext(AppContext)
  
   const [open, setOpen] = useState(false)
   
   return (
-    <div className = "absolute bottom-2 right-[4%]">
+    <div className = "absolute bottom-2 right-[6%]">
       <div className = "relative w-fit">
         <div className = "flex flex-col">
           {
@@ -56,8 +56,7 @@ export default function ShadePalette({ setSelected }) {
                   <div className = "flex flex-row justify-between">
                     Rs. { look.products[keyName].price }
                   </div>
-                  <button className=' items-center' onClick = { () => addToCart(look.products[keyName]) }><IoMdAddCircle size={32}/></button>
-                  
+                  <button className='items-center' onClick = { () => addToCart(look.products[keyName]) }><IoMdAddCircle size={32}/></button>
                 </div>                            
               )
             })

@@ -1,8 +1,12 @@
+import { useContext } from 'react'
 import { useLocation } from 'react-router-dom'
+import { AppContext } from '../context/store'
 import { CiSearch } from 'react-icons/ci'
 import { IoCartOutline } from 'react-icons/io5'
 
 export default function Navbar() {
+    const { cartProds } = useContext(AppContext)
+
     const location = useLocation()
 
     return (
@@ -16,7 +20,9 @@ export default function Navbar() {
                     </div>
                     <a href = '/cart' class = "relative text-white text-4xl mr-6">
                         <IoCartOutline />
-                        <span className = "absolute bg-red-400 -top-2 -right-2 text-sm rounded-full px-2">3</span>
+                        <span className = "absolute bg-red-400 -top-2 -right-2 text-sm rounded-full px-2">
+                            { cartProds.length }
+                        </span>
                     </a>
                 </div>
             }
