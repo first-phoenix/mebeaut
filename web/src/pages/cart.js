@@ -27,7 +27,7 @@ function Cart() {
             </tr>
           </thead>
         }
-        <tbody>
+        <tbody className="text-white">
           {
             cartProds.length > 0 && cartProds.map((item, index) => {
               return (

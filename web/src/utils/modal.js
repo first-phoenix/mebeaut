@@ -12,7 +12,7 @@ const customStyles = {
     transform: "translate(-50%, -50%)",
     backgroundColor: "white",
     width: 600,
-    height: 500
+    height: 400
   }
 }
  

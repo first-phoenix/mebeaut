@@ -159,58 +159,6 @@
   "tools": {}
 },
 {
-  "name": "Corporate",
-  "asset": "./assets/templates/corporate.png",
-  "trending": false,
-  "instagram": false,
-  "products": {
-    "foundation": {
-      "name": "Pro-Matte Foundation",
-      "shadeName": "Fresh Beige",
-      "shadeHex": "#d49e6c",
-      "shadeCode": "107",
-      "image": "https://es.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/foundation-makeup/infallible-pro-matte-foundation/fresh-beige-107/071249293065_t1.png?w=360&rev=f8861b91bc9f4e819607b56a1c6d759e&hash=C541D1C8FEE7E4FD76C71CAC341ABD55E6A4D36F",
-      "price": "3665"
-    },
-    "concealer": {
-      "name": "L'Oréal True Match Concealer",
-      "shadeName": "Fair/Light Neutral",
-      "shadeHex": "#efcbb2",
-      "shadeCode": "N1-2-3",
-      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/fair-light-neutral-n1-2-3/071249017265_t1.png?w=360&rev=3b98a3a4ff934f8a8f66368e17a547ad&hash=EE555799D49970C253D382DF6D2F7DBC3742EA02",
-      "price": "828"
-    },
-    "blush": {
-      "name": "L'Oréal True Match Blush",
-      "shadeName": "Baby Blossom",
-      "shadeHex": "#d8a9a5",
-      "shadeCode": "C1",
-      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017500_t1.png?w=360&rev=6eaf4eaba3cf49e88f4ba01622b33a55&hash=7DF8588A80514B51226CC2C3F3286A01689F5BF3",
-      "price": "775"
-    },
-    "eyeliner": {
-      "name": "L'Oreal Paris Matte Signature Eyeliner",
-      "shadeName": "Black",
-      "shadeHex": "#000000",
-      "shadeCode": "01",
-      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249403709_t1.png?w=360&rev=6c9fa51d8ee0411faf9a5c5e7b96f223&hash=D8AC8F86ABE8A8A96029444E5DBA26EE85FBEBF7",
-      "price": "849"
-      
-    },
-    "lipstick": {
-      "name": "L'Oréal Rouge Signature Matte Liquid Lipstick",
-      "shadeName": "I Explore",
-      "shadeHex": "#7D463F",
-      "shadeCode": "116",
-      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249369982_t1.png?w=360&rev=82acb8fa71034d708d775d2657b2ef15&hash=A4EAD9EDB9B0D679891ACFE7816149B1D4F152D8",
-      "price": "809"
-    }
-
-  },
-  "addons": {},
-  "tools": {}
-},
-{
   "name": "Date",
   "asset": "./assets/templates/date.png",
   "trending": false,
@@ -258,6 +206,58 @@
     "image": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/lip-makeup/6902395742739_packshot.png?w=360&rev=24757d2e6fe24690abf0c173396bd2eb&hash=53083847CC7BCDE628A2FA80B12B7A1CAFED5DC0",
     "price": "809"
   }
+
+  },
+  "addons": {},
+  "tools": {}
+},
+{
+  "name": "Corporate",
+  "asset": "./assets/templates/corporate.png",
+  "trending": false,
+  "instagram": false,
+  "products": {
+    "foundation": {
+      "name": "Pro-Matte Foundation",
+      "shadeName": "Fresh Beige",
+      "shadeHex": "#d49e6c",
+      "shadeCode": "107",
+      "image": "https://es.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/foundation-makeup/infallible-pro-matte-foundation/fresh-beige-107/071249293065_t1.png?w=360&rev=f8861b91bc9f4e819607b56a1c6d759e&hash=C541D1C8FEE7E4FD76C71CAC341ABD55E6A4D36F",
+      "price": "3665"
+    },
+    "concealer": {
+      "name": "L'Oréal True Match Concealer",
+      "shadeName": "Fair/Light Neutral",
+      "shadeHex": "#efcbb2",
+      "shadeCode": "N1-2-3",
+      "image": "https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/products/makeup/face/concealer/true-match-concealer/fair-light-neutral-n1-2-3/071249017265_t1.png?w=360&rev=3b98a3a4ff934f8a8f66368e17a547ad&hash=EE555799D49970C253D382DF6D2F7DBC3742EA02",
+      "price": "828"
+    },
+    "blush": {
+      "name": "L'Oréal True Match Blush",
+      "shadeName": "Baby Blossom",
+      "shadeHex": "#d8a9a5",
+      "shadeCode": "C1",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249017500_t1.png?w=360&rev=6eaf4eaba3cf49e88f4ba01622b33a55&hash=7DF8588A80514B51226CC2C3F3286A01689F5BF3",
+      "price": "775"
+    },
+    "eyeliner": {
+      "name": "L'Oreal Paris Matte Signature Eyeliner",
+      "shadeName": "Black",
+      "shadeHex": "#000000",
+      "shadeCode": "01",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249403709_t1.png?w=360&rev=6c9fa51d8ee0411faf9a5c5e7b96f223&hash=D8AC8F86ABE8A8A96029444E5DBA26EE85FBEBF7",
+      "price": "849"
+      
+    },
+    "lipstick": {
+      "name": "L'Oréal Rouge Signature Matte Liquid Lipstick",
+      "shadeName": "I Explore",
+      "shadeHex": "#7D463F",
+      "shadeCode": "116",
+      "image": "https://www.lorealparis.ca/-/media/project/loreal/brand-sites/oap/americas/ca/products/t1/071249369982_t1.png?w=360&rev=82acb8fa71034d708d775d2657b2ef15&hash=A4EAD9EDB9B0D679891ACFE7816149B1D4F152D8",
+      "price": "809"
+    }
 
   },
   "addons": {},

@@ -27,7 +27,7 @@ const CustomCapture = () => {
  
   return (
     <>
-      { imageSrc ? <img src = { imageSrc } /> : <Webcam height="900" width = '700' ref = { webcamRef } />}
+      { imageSrc ? <img src = { imageSrc } /> : <Webcam height="900" width = '900' ref = { webcamRef } />}
       <div className = "font-bold text-xl">
         { imageSrc ? <button onClick = { retake }>Retake photo</button> : <button onClick = { captureImage }>Capture photo</button> }<br/>
         { imageSrc && <button onClick = { loadLook }>Apply some magic!</button> }

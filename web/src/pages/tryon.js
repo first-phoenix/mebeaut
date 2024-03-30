@@ -12,7 +12,7 @@ function TryOn() {
   const { userPhoto, parameter } = useContext(AppContext)
   const navigate = useNavigate()
 
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(true)
 
   useEffect(() => {
     if(!userPhoto) {
@@ -25,7 +25,7 @@ function TryOn() {
       <div className = "absolute top-[18%] left-[8%] overflow-hidden">
         <div className = "relative ">
           {/* User's picture from webcam */}
-          <img className = "rounded-md" src = { userPhoto } />
+          <img className = "w-full rounded-md" src = { userPhoto } />
           {/* The product range for selected look */}
           < ShadePalette  />
         </div>
@@ -42,7 +42,7 @@ function TryOn() {
         }
       </div>
       { show && <ReactBot /> }
-      <div className = "bg-black absolute rounded-full bottom-4 right-4 text-white p-4">
+      <div className = "bg-black absolute rounded-full bottom-4 right-4 text-2xl text-white p-4">
         <FaMessage onClick = { () => setShow(!show)  } />
       </div>
     </div>
