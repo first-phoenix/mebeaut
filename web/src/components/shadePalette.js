@@ -3,7 +3,7 @@ import Modal from 'react-modal'
 import { AppContext } from '../context/store'
 import Tooltip from '../utils/tooltip'
 import { LuPlus } from 'react-icons/lu'
-import { IoMdAddCircle } from "react-icons/io";
+import { IoMdAddCircle, IoMdRemoveCircle } from 'react-icons/io'
  
 // Styles for the pop-up
 const customStyles = {
@@ -21,7 +21,7 @@ const customStyles = {
 }
  
 export default function ShadePalette() {
-  const { look, setParameter, addToCart } = useContext(AppContext)
+  const { look, setParameter, cartProds, addToCart, deleteItem } = useContext(AppContext)
  
   const [open, setOpen] = useState(false)
   const [tut, setTut] = useState(false)
@@ -46,6 +46,8 @@ export default function ShadePalette() {
           {/* Tabled contents for current look product range */}                  
           {
             Object.keys(look.products).map((keyName, index) => {
+              console.log(cartProds.includes(look.products[keyName]))
+
               return (                         
                 <div key = { index } className = "grid grid-cols-4 border-black border-b-2 py-2 items-center font-cust4 gap-6 my-6">
                   <img className = "h-16 w-12" src = { look.products[keyName].image } />
@@ -58,7 +60,10 @@ export default function ShadePalette() {
                   <div className = "flex flex-row justify-between">
                     Rs. { look.products[keyName].price }
                   </div>
-                  <button className='items-center' onClick = { () => addToCart(look.products[keyName]) }><IoMdAddCircle size={32}/></button>
+                  {
+                    cartProds.includes(look.products[keyName]) ? <button className='items-center' onClick = { () => deleteItem(look.products[keyName]) }><IoMdRemoveCircle size={32}/></button> 
+                    : <button className='items-center' onClick = { () => addToCart(look.products[keyName]) }><IoMdAddCircle size={32}/></button>
+                  }
                 </div>                            
               )
             })

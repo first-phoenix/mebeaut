@@ -1,6 +1,7 @@
 import { useContext, useState, useRef, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Webcam from 'react-webcam'
+import Sparkles from 'react-sparkle'
 import { AppContext } from '../context/store'
  
 const CustomCapture = () => {
@@ -28,9 +29,14 @@ const CustomCapture = () => {
   return (
     <>
       { imageSrc ? <img src = { imageSrc } /> : <Webcam height="900" width = '900' ref = { webcamRef } />}
-      <div className = "font-bold text-xl">
+      <div className = "flex flex-col font-bold items-start text-xl">
         { imageSrc ? <button onClick = { retake }>Retake photo</button> : <button onClick = { captureImage }>Capture photo</button> }<br/>
-        { imageSrc && <button onClick = { loadLook }>Apply some magic!</button> }
+        { 
+          imageSrc && <span onClick = { loadLook } className = "relative">
+            <h4>Apply some magic!</h4>
+            <Sparkles color = "yellow" maxSize = { 15 } overflowPx = { 12 } />
+          </span>
+        }
       </div>
     </>
   )

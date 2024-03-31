@@ -51,10 +51,12 @@ const ProviderWrapper = ({ children }) => {
     }
 
     function addToCart(item) {
-        let temp = [...cartProds, item]
-
-        setCartProds(temp)
-        window.sessionStorage.setItem('prods', JSON.stringify(temp))
+        if(!cartProds.includes(item)) {
+            let temp = [...cartProds, item]
+            
+            setCartProds(temp)
+            window.sessionStorage.setItem('prods', JSON.stringify(temp))
+        }
     }
 
     function deleteItem(item) {

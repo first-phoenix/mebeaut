@@ -1,6 +1,7 @@
 import { useContext, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { fileToBase64 } from 'file64'
+import Sparkles from 'react-sparkle'
 import { AppContext } from '../context/store'
 
 function Uploader() {
@@ -31,7 +32,12 @@ function Uploader() {
     <div className='font-bold text-xl'>
       <input type = "file" accept = "image/*" ref = { imageRef } onChange = { createImageURL } />
       { image && <img src = { image } /> }
-      { image && <button onClick = { loadLook }>Apply Some Magic</button> }
+      { 
+        image && <span onClick = { loadLook } className = "relative">
+          <h4>Apply some magic!</h4>
+          <Sparkles color = "yellow" maxSize = { 15 } overflowPx = { 12 } />
+        </span>
+      }
     </div>
   )
 }
