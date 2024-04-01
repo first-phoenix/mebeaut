@@ -4,10 +4,12 @@ import { IoIosTrendingUp } from 'react-icons/io'
 import { FaInstagramSquare } from 'react-icons/fa'
  
 export default function LookTile({ item }) {
-  const { setLook } = useContext(AppContext)
+  const { look, setLook } = useContext(AppContext)
  
+  const custClass = look.name === item.name ? ' bg-[#d2d0d0] opacity-65' : ' bg-white opacity-85'
+
   return (
-    <div className = "bg-white relative opacity-85 hover:shadow-lg hover:bg-[#d2d0d0] rounded-lg px-10 py-8" onClick = { () => setLook(item) }>
+    <div className = { "relative" + custClass + " hover:shadow-lg hover:bg-[#d2d0d0] rounded-lg px-10 py-8" } onClick = { () => setLook(item) }>
       { item.trending && <IoIosTrendingUp className = "absolute top-3 right-4 text-3xl" /> }
       { item.instagram && <img src = "./assets/insta.png" className = "absolute top-3 right-4 w-8 h-8" /> }
       <div className = "flex justify-between items-center">

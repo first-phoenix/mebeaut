@@ -17,6 +17,7 @@ function Cart() {
   return (
     <section section className = "flex flex-col px-56 py-12">
       {/* Tabled contents for cart items */}
+      { cartProds.length === 0 && <h2 className = "text-center text-white text-lg py-24">Your cart is currently empty, please add some items to view!</h2> }
       <table className = "table-auto border-separate border-spacing-6">
         {
           cartProds.length > 0 && <thead className = "bg-[#ecf0ed]">

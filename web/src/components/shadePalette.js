@@ -49,28 +49,27 @@ export default function ShadePalette() {
               console.log(cartProds.includes(look.products[keyName]))
 
               return (                         
-                <div key = { index } className = "grid grid-cols-4 border-black border-b-2 py-2 items-center font-cust4 gap-6 my-6">
-                  <img className = "h-16 w-12" src = { look.products[keyName].image } />
+                <div key = { index } className = "grid grid-cols-4 border-black border-b-2 py-2 items-center text-xs font-cust4 gap-6 my-2">
+                  <img className = "h-12 w-8" src = { look.products[keyName].image } />
                   <div className = "flex flex-row justify-between">
                     { look.products[keyName].name }
                     <br/>
                     { look.products[keyName].shadeCode }
                   </div>
-                  
                   <div className = "flex flex-row justify-between">
                     Rs. { look.products[keyName].price }
                   </div>
                   {
-                    cartProds.includes(look.products[keyName]) ? <button className='items-center' onClick = { () => deleteItem(look.products[keyName]) }><IoMdRemoveCircle size={32}/></button> 
-                    : <button className='items-center' onClick = { () => addToCart(look.products[keyName]) }><IoMdAddCircle size={32}/></button>
+                    cartProds.includes(look.products[keyName]) ? <button className='items-center' onClick = { () => deleteItem(look.products[keyName]) }><IoMdRemoveCircle size={22}/></button> 
+                    : <button className='items-center' onClick = { () => addToCart(look.products[keyName]) }><IoMdAddCircle size={22}/></button>
                   }
                 </div>                            
               )
             })
           }
-          <button className = "bg-black text-white w-fit rounded-md py-2 px-6 m-8" onClick = { setTut }>Watch Tutorial</button>
+          <button className = "bg-black text-white text-xs w-fit rounded-md py-2 px-6 m-8" onClick = { setTut }>Watch Tutorial</button>
           <Modal isOpen = { tut } onRequestClose = { () => setTut(false) } style = { customStyles }> 
-            <video width = "300" height = "200" controls>
+            <video width = "200" height = "150" controls>
               <source src = "./assets/tutorials/how_to_do.mp4" type = "video/mp4" />
             </video>
           </Modal>

@@ -3,13 +3,12 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 var settings = {
-    dots: false,
-    arrows: true,
-    infinite: true,
-    autoplaySpeed: 2500,
-    autoplay: true,
-    slidesToShow: 1
-  }
+  dots: false,
+  infinite: true,
+  autoplaySpeed: 2500,
+  autoplay: true,
+  slidesToShow: 1
+}
 
 export default function Carousel() {
     return (
