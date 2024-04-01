@@ -29,7 +29,7 @@ const CustomCapture = () => {
   return (
     <>
       { imageSrc ? <img src = { imageSrc } /> : <Webcam height="900" width = '900' ref = { webcamRef } />}
-      <div className = "flex flex-col font-bold items-start text-xl">
+      <div className = "flex flex-col font-bold items-start text-xl my-8">
         { imageSrc ? <button onClick = { retake }>Retake photo</button> : <button onClick = { captureImage }>Capture photo</button> }<br/>
         { 
           imageSrc && <span onClick = { loadLook } className = "relative">

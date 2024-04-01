@@ -1,5 +1,5 @@
 
-import { useContext, useEffect } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../context/store'
 import { FaTrashAlt } from 'react-icons/fa'
@@ -7,7 +7,19 @@ import { FaTrashAlt } from 'react-icons/fa'
 function Cart() {
   const { userPhoto, cartProds, deleteItem } = useContext(AppContext)
   const navigate = useNavigate()
- 
+
+  const [cartTotal, setCartTotal] = useState(0)
+  
+  useEffect(() => {
+    let total = 0
+
+    for(var i = 0; i < cartProds.length; i++) {
+      total += parseFloat(cartProds[i].price)
+    }
+
+    setCartTotal(total)
+  }, [cartProds, deleteItem])
+
   useEffect(() => {
     if(!userPhoto) {
       navigate('/')
@@ -53,7 +65,10 @@ function Cart() {
         </tbody>
       </table>
       { 
-        cartProds.length > 0 && <button className = "bg-black text-white w-fit rounded-md py-2 px-6">Place Order</button>
+        cartProds.length > 0 && <div className = "flex flex-row items-center justify-end text-white gap-6">
+          <h3 className = "text-xl font-bold">Your total is, Rs. { cartTotal }.</h3>
+          <button className = "bg-black w-fit rounded-md py-2 px-6">Place Order</button>
+        </div>
       }
     </section>
   )

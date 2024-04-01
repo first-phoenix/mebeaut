@@ -53,7 +53,7 @@ const ProviderWrapper = ({ children }) => {
     function addToCart(item) {
         if(!cartProds.includes(item)) {
             let temp = [...cartProds, item]
-            
+
             setCartProds(temp)
             window.sessionStorage.setItem('prods', JSON.stringify(temp))
         }
