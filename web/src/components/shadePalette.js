@@ -46,8 +46,6 @@ export default function ShadePalette() {
           {/* Tabled contents for current look product range */}                  
           {
             Object.keys(look.products).map((keyName, index) => {
-              console.log(cartProds.includes(look.products[keyName]))
-
               return (                         
                 <div key = { index } className = "grid grid-cols-4 border-black border-b-2 py-2 items-center text-xs font-cust4 gap-6 my-2">
                   <img className = "h-12 w-8" src = { look.products[keyName].image } />

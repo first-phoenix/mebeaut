@@ -1,7 +1,6 @@
 import { useContext } from 'react'
 import { AppContext } from '../context/store'
 import { IoIosTrendingUp } from 'react-icons/io'
-import { FaInstagramSquare } from 'react-icons/fa'
  
 export default function LookTile({ item }) {
   const { look, setLook } = useContext(AppContext)

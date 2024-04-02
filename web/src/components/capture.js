@@ -32,10 +32,7 @@ const CustomCapture = () => {
       <div className = "flex flex-col font-bold items-start text-xl my-8">
         { imageSrc ? <button onClick = { retake }>Retake photo</button> : <button onClick = { captureImage }>Capture photo</button> }<br/>
         { 
-          imageSrc && <span onClick = { loadLook } className = "relative">
-            <h4>Apply some magic!</h4>
-            <Sparkles color = "yellow" maxSize = { 15 } overflowPx = { 12 } />
-          </span>
+          imageSrc && <span onClick = { loadLook }>Apply some magic!</span>
         }
       </div>
     </>

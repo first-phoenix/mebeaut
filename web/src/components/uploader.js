@@ -33,10 +33,7 @@ function Uploader() {
       <input type = "file" accept = "image/*" ref = { imageRef } onChange = { createImageURL } />
       { image && <img src = { image } /> }
       { 
-        image && <span onClick = { loadLook } className = "relative">
-          <h4>Apply some magic!</h4>
-          <Sparkles color = "yellow" maxSize = { 15 } overflowPx = { 12 } />
-        </span>
+        image && <span onClick = { loadLook }>Apply some magic!</span>
       }
     </div>
   )
